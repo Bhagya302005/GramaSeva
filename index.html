@@ -1,0 +1,3213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grama Seva | Rural Sanitation & Government Schemes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>🌾</span>
+
+        <div>
+            <h2>Grama Seva</h2>
+            <small id="logoSubtitle">Rural Awareness Portal</small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home" id="navHome">Home</a>
+        <a href="#about" id="navAbout">About</a>
+        <a href="#survey" id="navSurvey">Village Survey</a>
+        <a href="#problems" id="navProblems">Problems</a>
+        <a href="#objectives" id="navObjectives">Objectives</a>
+        <a href="#schemes" id="navSchemes">Government Schemes</a>
+        <a href="#solutions" id="navSolutions">Solutions</a>
+        <a href="#faq" id="navFaq">FAQ</a>
+    </nav>
+
+    <select id="language">
+        <option value="en">English</option>
+        <option value="kn">ಕನ್ನಡ</option>
+        <option value="hi">हिंदी</option>
+    </select>
+
+</header>
+
+
+<!-- =========================================================
+     HOME
+========================================================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="welcome" id="welcome">
+            WELCOME TO GRAMA SEVA
+        </span>
+
+        <h1 id="heroTitle">
+            Government Schemes<br>
+            <span>Made Simple for Villages</span>
+        </h1>
+
+        <p id="heroText">
+            Find government schemes, sanitation information,
+            village survey findings and practical solutions
+            for cleaner and healthier rural communities.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#schemes"
+               class="primary-btn"
+               id="viewSchemes">
+                🏛️ View Government Schemes
+            </a>
+
+            <a href="#survey"
+               class="secondary-btn"
+               id="viewSurvey">
+                📋 View Survey
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK INFORMATION
+========================================================= -->
+
+<section class="quick-section">
+
+    <div class="quick-card">
+        <span>🏛️</span>
+
+        <div>
+            <h3 id="quickSchemeTitle">Government Schemes</h3>
+            <p id="quickSchemeText">
+                Learn about sanitation-related government initiatives.
+            </p>
+        <div class="quick-card">
+
+    <div class="scheme-icon">
+        📢
+        
+    </div>
+
+    <h3 id="quickUpdateTitle">
+        Latest Government Updates
+    </h3>
+
+    <p id="quickUpdateText">
+        Check the latest information about government schemes,
+        sanitation and rural development.
+    </p>
+
+    <br>
+
+    <a href="/updates"
+       class="scheme-button"
+       id="quickUpdateButton">
+        View Latest Updates
+    </a>
+
+</div>
+        </div>
+    </div>
+
+
+    <div class="quick-card">
+        <span>📋</span>
+
+        <div>
+            <h3 id="quickSurveyTitle">Village Survey</h3>
+            <p id="quickSurveyText">
+                Understand the sanitation conditions observed during the survey.
+            </p>
+        </div>
+        <div class="quick-card">
+    <div class="scheme-icon">
+        📝
+    </div>
+
+    <h3>
+        Report Sanitation Problem
+    </h3>
+
+    <p>
+        Report drainage, waste disposal, sewage and other
+        sanitation problems in your village.
+    </p>
+
+    <br>
+
+    <a href="/report" class="scheme-button">
+        Report Problem
+    </a>
+</div>
+    </div>
+
+
+    <div class="quick-card">
+        <span>🌐</span>
+
+        <div>
+            <h3 id="quickLanguageTitle">3 Languages</h3>
+            <p id="quickLanguageText">
+                English, Kannada and Hindi.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT PROJECT
+========================================================= -->
+
+<section id="about" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label" id="aboutLabel">
+            ABOUT THE PROJECT
+        </span>
+
+        <h2 id="aboutHeading">
+            Sewage Management & Rural Sanitation
+        </h2>
+
+        <p id="aboutDescription">
+            Understanding sanitation conditions and creating awareness
+            among rural communities.
+        </p>
+
+    </div>
+
+
+    <div class="content-card">
+
+        <p id="aboutText1">
+            Sewage management is an important part of rural sanitation
+            and public health. It involves the safe collection, treatment
+            and disposal of wastewater and human waste.
+        </p>
+
+        <p id="aboutText2">
+            Our project focused on understanding sanitation conditions
+            in the village of Patan, studying toilet usage and drainage
+            conditions, identifying problems and creating awareness
+            among villagers.
+        </p>
+
+        <p id="aboutText3">
+            The activity also focused on government sanitation initiatives,
+            practical solutions and encouraging community participation
+            for a cleaner and healthier village.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VILLAGE SURVEY
+========================================================= -->
+
+<section id="survey" class="survey-section">
+
+    <div class="section-title">
+
+        <span class="section-label" id="surveyLabel">
+            FIELD SURVEY
+        </span>
+
+        <h2 id="surveyHeading">
+            Village Survey
+        </h2>
+
+        <p id="surveyDescription">
+            What we observed during our visit and interaction with villagers.
+        </p>
+
+    </div>
+
+
+    <div class="survey-grid">
+
+        <div class="survey-card">
+            <div class="survey-icon">🚽</div>
+
+            <h3 id="survey1Title">
+                Toilet Availability
+            </h3>
+
+            <p id="survey1Text">
+                Toilets were available in the village, but some people
+                still preferred going outside because of habits and
+                lack of awareness.
+            </p>
+        </div>
+
+
+        <div class="survey-card">
+            <div class="survey-icon">🚰</div>
+
+            <h3 id="survey2Title">
+                Drainage Condition
+            </h3>
+
+            <p id="survey2Text">
+                The drainage system was not properly maintained in
+                some areas.
+            </p>
+        </div>
+
+
+        <div class="survey-card">
+            <div class="survey-icon">💧</div>
+
+            <h3 id="survey3Title">
+                Wastewater Collection
+            </h3>
+
+            <p id="survey3Text">
+                Wastewater collected in certain places and created
+                unhygienic conditions.
+            </p>
+        </div>
+
+
+        <div class="survey-card">
+            <div class="survey-icon">📢</div>
+
+            <h3 id="survey4Title">
+                Awareness
+            </h3>
+
+            <p id="survey4Text">
+                Awareness about sanitation, hygiene and sewage management
+                was an important area requiring attention.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROBLEMS IDENTIFIED
+========================================================= -->
+
+<section id="problems" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label" id="problemLabel">
+            PROBLEMS IDENTIFIED
+        </span>
+
+        <h2 id="problemHeading">
+            Major Sanitation Problems
+        </h2>
+
+        <p id="problemDescription">
+            Problems identified during the village survey.
+        </p>
+
+    </div>
+
+
+    <div class="problem-list">
+
+        <div class="problem-item">
+            <span>01</span>
+            <p id="problem1">
+                Some villagers still practiced open defecation despite
+                having access to toilets.
+            </p>
+        </div>
+
+        <div class="problem-item">
+            <span>02</span>
+            <p id="problem2">
+                Poor maintenance of drainage systems led to wastewater
+                accumulation.
+            </p>
+        </div>
+
+        <div class="problem-item">
+            <span>03</span>
+            <p id="problem3">
+                Stagnant wastewater created unhygienic conditions.
+            </p>
+        </div>
+
+        <div class="problem-item">
+            <span>04</span>
+            <p id="problem4">
+                Awareness about sanitation and hygiene was limited.
+            </p>
+        </div>
+
+        <div class="problem-item">
+            <span>05</span>
+            <p id="problem5">
+                Nearby water sources could be affected by improper waste
+                disposal.
+            </p>
+        </div>
+
+        <div class="problem-item">
+            <span>06</span>
+            <p id="problem6">
+                Community participation in cleanliness and drainage
+                maintenance needed improvement.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     OBJECTIVES
+========================================================= -->
+
+<section id="objectives" class="objectives-section">
+
+    <div class="section-title">
+
+        <span class="section-label" id="objectiveLabel">
+            PROJECT OBJECTIVES
+        </span>
+
+        <h2 id="objectiveHeading">
+            What We Wanted to Achieve
+        </h2>
+
+        <p id="objectiveDescription">
+            Main objectives of the sewage management awareness project.
+        </p>
+
+    </div>
+
+
+    <div class="objective-grid">
+
+        <div class="objective-card">
+            <span>🎯</span>
+            <p id="objective1">
+                Study existing sewage management and sanitation conditions.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <span>📢</span>
+            <p id="objective2">
+                Create awareness about proper sewage management and
+                maintaining a hygienic environment.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <span>❤️</span>
+            <p id="objective3">
+                Educate villagers about health risks associated with
+                poor sanitation and improper wastewater management.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <span>🏛️</span>
+            <p id="objective4">
+                Spread awareness about government sanitation initiatives.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <span>🚽</span>
+            <p id="objective5">
+                Encourage regular toilet use and maintenance.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <span>🔧</span>
+            <p id="objective6">
+                Suggest practical solutions for improving drainage
+                and sewage management.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <span>🌱</span>
+            <p id="objective7">
+                Contribute to a cleaner, healthier and more sustainable
+                village environment.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VILLAGERS QUESTIONS
+========================================================= -->
+
+<section id="questions" class="faq-section">
+
+    <div class="section-heading">
+
+        <span class="section-label" id="questionLabel">
+            SURVEY QUESTIONS
+        </span>
+
+        <h2 id="questionHeading">
+            Questions Asked by Villagers
+        </h2>
+
+        <p id="questionDescription">
+            Important questions discussed during the awareness activity.
+        </p>
+
+    </div>
+
+
+    <div class="faq-container">
+
+
+        <div class="faq-item">
+            <h3 id="question1">
+                Why is it important to use toilets?
+            </h3>
+
+            <p id="answer1">
+                Using toilets helps maintain cleanliness, prevent the
+                spread of diseases, protect water sources and provide
+                privacy and safety.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question2">
+                What diseases can spread due to open defecation?
+            </h3>
+
+            <p id="answer2">
+                Poor sanitation and open defecation can increase the
+                risk of diseases such as diarrheal illnesses and
+                other infections.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question3">
+                How does poor sewage management affect health?
+            </h3>
+
+            <p id="answer3">
+                Improper wastewater disposal creates unhygienic conditions,
+                encourages mosquito breeding and can contaminate water sources.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question4">
+                Why does water collect near drains?
+            </h3>
+
+            <p id="answer4">
+                Water can accumulate when drains are blocked by waste,
+                mud or other debris and wastewater cannot flow properly.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question5">
+                What can we do to keep drains clean?
+            </h3>
+
+            <p id="answer5">
+                Avoid throwing plastic, food waste and garbage into drains
+                and maintain drainage channels regularly.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question6">
+                What are the benefits of proper drainage systems?
+            </h3>
+
+            <p id="answer6">
+                Proper drainage helps prevent water stagnation, reduces
+                mosquito breeding, improves cleanliness and protects
+                public health.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question7">
+                Are there government schemes that support sanitation?
+            </h3>
+
+            <p id="answer7">
+                Yes. Government initiatives such as Swachh Bharat Mission
+                Grameen support sanitation, toilet usage and village
+                cleanliness.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question8">
+                How can we maintain toilets properly?
+            </h3>
+
+            <p id="answer8">
+                Toilets should be used regularly, kept clean, supplied
+                with necessary water and maintained properly.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question9">
+                What should we do with household waste?
+            </h3>
+
+            <p id="answer9">
+                Household waste should be handled properly and should
+                not be thrown into drains or water sources.
+            </p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3 id="question10">
+                Why should wastewater not be allowed to stagnate?
+            </h3>
+
+            <p id="answer10">
+                Stagnant wastewater can create unhygienic surroundings
+                and increase environmental and health risks.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SOLUTIONS
+========================================================= -->
+
+<section id="solutions" class="sanitation-section">
+
+    <div class="section-title">
+
+        <span class="section-label" id="solutionLabel">
+            SOLUTIONS PROVIDED
+        </span>
+
+        <h2 id="solutionHeading">
+            Practical Solutions
+        </h2>
+
+        <p id="solutionDescription">
+            Simple steps that villagers can follow in their daily lives.
+        </p>
+
+    </div>
+
+
+    <div class="info-container">
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🚽</div>
+
+            <h3 id="solution1Title">
+                Regular Toilet Use
+            </h3>
+
+            <p id="solution1Text">
+                Encourage everyone to use toilets regularly and avoid
+                open defecation.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🚰</div>
+
+            <h3 id="solution2Title">
+                Maintain Drains
+            </h3>
+
+            <p id="solution2Text">
+                Keep drainage channels clean and allow wastewater
+                to flow properly.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🗑️</div>
+
+            <h3 id="solution3Title">
+                Proper Waste Disposal
+            </h3>
+
+            <p id="solution3Text">
+                Do not throw plastic, food waste or other garbage
+                into drainage systems.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">👨‍👩‍👧‍👦</div>
+
+            <h3 id="solution4Title">
+                Community Participation
+            </h3>
+
+            <p id="solution4Text">
+                Encourage children, youngsters and community members
+                to participate in cleanliness activities.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">📢</div>
+
+            <h3 id="solution5Title">
+                Awareness
+            </h3>
+
+            <p id="solution5Text">
+                Explain the importance of sanitation, hygiene and
+                sewage management in simple language.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🏛️</div>
+
+            <h3 id="solution6Title">
+                Use Government Support
+            </h3>
+
+            <p id="solution6Text">
+                Make villagers aware of relevant government sanitation
+                programmes and available support.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GOVERNMENT SCHEMES
+========================================================= -->
+
+<section id="schemes" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label" id="schemeLabel">
+            GOVERNMENT SUPPORT
+        </span>
+
+        <h2 id="schemeHeading">
+            Government Schemes
+        </h2>
+
+        <p id="schemeDescription">
+            Important sanitation and wastewater-related government
+            initiatives.
+        </p>
+
+    </div>
+
+
+    <div class="scheme-grid">
+
+
+        <!-- SBM GRAMEEN -->
+
+        <div class="scheme-card">
+
+            <div class="scheme-icon">🚽</div>
+
+            <h3 id="scheme1Title">
+                Swachh Bharat Mission – Grameen
+            </h3>
+
+            <p id="scheme1Text">
+                Focuses on rural sanitation, toilet use, ODF sustainability,
+                solid waste management and liquid waste management.
+            </p>
+
+            <ul>
+                <li id="scheme1Point1">
+                    Rural sanitation
+                </li>
+
+                <li id="scheme1Point2">
+                    Toilet usage
+                </li>
+
+                <li id="scheme1Point3">
+                    Solid and liquid waste management
+                </li>
+            </ul>
+
+            <a href="https://sbm.gov.in/SBM_DBT/Secure/DBT/DBT_Registration.aspx"
+               target="_blank"
+               class="scheme-button"
+               id="scheme1Button">
+                📝 Citizen Registration / Apply
+            </a>
+
+            <a href="https://swachhbharatmission.ddws.gov.in/"
+               target="_blank"
+               class="scheme-link"
+               id="scheme1Info">
+                Official Information →
+            </a>
+
+        </div>
+
+
+        <!-- SBM URBAN -->
+
+        <div class="scheme-card">
+
+            <div class="scheme-icon">🏙️</div>
+
+            <h3 id="scheme2Title">
+                Swachh Bharat Mission – Urban 2.0
+            </h3>
+
+            <p id="scheme2Text">
+                Focuses on sustainable sanitation, wastewater treatment,
+                solid waste management and cleaner cities.
+            </p>
+
+            <ul>
+                <li id="scheme2Point1">
+                    Wastewater treatment
+                </li>
+
+                <li id="scheme2Point2">
+                    Sustainable sanitation
+                </li>
+
+                <li id="scheme2Point3">
+                    Solid waste management
+                </li>
+            </ul>
+
+            <a href="https://mohua.gov.in/"
+               target="_blank"
+               class="scheme-button"
+               id="scheme2Button">
+                🌐 Official Portal
+            </a>
+
+            <a href="https://mohua.gov.in/"
+               target="_blank"
+               class="scheme-link"
+               id="scheme2Info">
+                Official Information →
+            </a>
+
+        </div>
+
+
+        <!-- NAMASTE -->
+
+        <div class="scheme-card">
+
+            <div class="scheme-icon">🧹</div>
+
+            <h3 id="scheme3Title">
+                NAMASTE Scheme
+            </h3>
+
+            <p id="scheme3Text">
+                Promotes the safety and dignity of sanitation workers
+                and supports safer, mechanised sanitation work.
+            </p>
+
+            <ul>
+                <li id="scheme3Point1">
+                    Safety of sanitation workers
+                </li>
+
+                <li id="scheme3Point2">
+                    Occupational safety training
+                </li>
+
+                <li id="scheme3Point3">
+                    Safer sanitation practices
+                </li>
+            </ul>
+
+            <a href="https://socialjustice.gov.in/"
+               target="_blank"
+               class="scheme-button"
+               id="scheme3Button">
+                🌐 Official Information
+            </a>
+
+            <a href="https://socialjustice.gov.in/public/ckeditor/upload/57341728039410.pdf"
+               target="_blank"
+               class="scheme-link"
+               id="scheme3Info">
+                Scheme Details →
+            </a>
+
+        </div>
+
+
+        <!-- NAMAMI GANGE -->
+
+        <div class="scheme-card">
+
+            <div class="scheme-icon">💧</div>
+
+            <h3 id="scheme4Title">
+                Namami Gange Programme
+            </h3>
+
+            <p id="scheme4Text">
+                Supports pollution reduction, sewage treatment,
+                conservation and rejuvenation of the River Ganga.
+            </p>
+
+            <ul>
+                <li id="scheme4Point1">
+                    Sewage treatment
+                </li>
+
+                <li id="scheme4Point2">
+                    Pollution reduction
+                </li>
+
+                <li id="scheme4Point3">
+                    Public awareness
+                </li>
+            </ul>
+
+            <a href="https://nmcg.nic.in/NamamiGanga.aspx"
+               target="_blank"
+               class="scheme-button"
+               id="scheme4Button">
+                🌐 Official Information
+            </a>
+
+            <a href="https://nmcg.nic.in/NamamiGanga.aspx"
+               target="_blank"
+               class="scheme-link"
+               id="scheme4Info">
+                Scheme Details →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BENEFITS
+========================================================= -->
+
+<section id="benefits" class="survey-section">
+
+    <div class="section-title">
+
+        <span class="section-label" id="benefitLabel">
+            BENEFITS
+        </span>
+
+        <h2 id="benefitHeading">
+            Benefits of Proper Sewage Management
+        </h2>
+
+        <p id="benefitDescription">
+            Proper sanitation benefits both rural communities and
+            government systems.
+        </p>
+
+    </div>
+
+
+    <div class="survey-grid">
+
+
+        <div class="survey-card">
+            <div class="survey-icon">❤️</div>
+
+            <h3 id="benefit1Title">
+                Better Public Health
+            </h3>
+
+            <p id="benefit1Text">
+                Proper sanitation helps reduce environmental and
+                sanitation-related health risks.
+            </p>
+        </div>
+
+
+        <div class="survey-card">
+            <div class="survey-icon">💧</div>
+
+            <h3 id="benefit2Title">
+                Cleaner Water
+            </h3>
+
+            <p id="benefit2Text">
+                Proper wastewater management helps protect water
+                sources from contamination.
+            </p>
+        </div>
+
+
+        <div class="survey-card">
+            <div class="survey-icon">🌱</div>
+
+            <h3 id="benefit3Title">
+                Cleaner Environment
+            </h3>
+
+            <p id="benefit3Text">
+                Proper waste and sewage management improves cleanliness
+                in villages.
+            </p>
+        </div>
+
+
+        <div class="survey-card">
+            <div class="survey-icon">🏛️</div>
+
+            <h3 id="benefit4Title">
+                Better Government Implementation
+            </h3>
+
+            <p id="benefit4Text">
+                Community participation helps sanitation programmes
+                achieve better results.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SANITATION AWARENESS
+========================================================= -->
+
+<section id="awareness" class="sanitation-section">
+
+    <div class="section-title">
+
+        <span class="section-label" id="awarenessLabel">
+            AWARENESS
+        </span>
+
+        <h2 id="awarenessHeading">
+            Sanitation & Sewage Management
+        </h2>
+
+        <p id="awarenessDescription">
+            Small changes in daily habits can create a cleaner and
+            healthier village.
+        </p>
+
+    </div>
+
+
+    <div class="info-container">
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🚽</div>
+
+            <h3 id="awareness1Title">
+                Use Toilets
+            </h3>
+
+            <p id="awareness1Text">
+                Always use toilets and keep them clean.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">💧</div>
+
+            <h3 id="awareness2Title">
+                Protect Water
+            </h3>
+
+            <p id="awareness2Text">
+                Keep sewage and waste away from drinking water sources.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🗑️</div>
+
+            <h3 id="awareness3Title">
+                Manage Waste
+            </h3>
+
+            <p id="awareness3Text">
+                Separate waste and dispose of it through proper systems.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🌱</div>
+
+            <h3 id="awareness4Title">
+                Keep the Village Clean
+            </h3>
+
+            <p id="awareness4Text">
+                Do not throw waste into streets, drains or water bodies.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RELEVANCE TO SOCIETY
+========================================================= -->
+
+<section id="society" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label" id="societyLabel">
+            SOCIAL RELEVANCE
+        </span>
+
+        <h2 id="societyHeading">
+            Relevance to Society
+        </h2>
+
+    </div>
+
+
+    <div class="content-card">
+
+        <p id="societyText1">
+            Proper sewage management directly contributes to public
+            health, environmental protection and better quality of life.
+        </p>
+
+        <p id="societyText2">
+            Creating awareness among villagers can encourage healthier
+            habits, regular toilet usage, proper waste disposal and
+            community participation.
+        </p>
+
+        <p id="societyText3">
+            A clean village also supports sustainable rural development
+            and helps communities make better use of sanitation facilities
+            and government initiatives.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONCLUSION
+========================================================= -->
+
+<section id="conclusion" class="conclusion-section">
+
+    <div class="section-title">
+
+        <span class="section-label" id="conclusionLabel">
+            CONCLUSION
+        </span>
+
+        <h2 id="conclusionHeading">
+            Towards a Cleaner Village
+        </h2>
+
+        <p id="conclusionText">
+            Sewage management is not only a government responsibility.
+            It requires awareness, proper habits and community participation.
+            By using toilets, maintaining drains, managing waste properly
+            and supporting sanitation initiatives, rural communities can
+            create a cleaner and healthier environment.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section id="faq" class="faq-section">
+
+    <div class="section-heading">
+
+        <span class="section-label" id="faqLabel">
+            HELP & INFORMATION
+        </span>
+
+        <h2 id="faqHeading">
+            Frequently Asked Questions
+        </h2>
+
+    </div>
+
+
+    <div class="faq-container">
+
+
+        <div class="faq-item">
+
+            <h3 id="faqQuestion1">
+                What is sewage management?
+            </h3>
+
+            <p id="faqAnswer1">
+                Sewage management means the proper collection,
+                treatment and safe disposal of wastewater.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3 id="faqQuestion2">
+                Why is sanitation important?
+            </h3>
+
+            <p id="faqAnswer2">
+                Good sanitation helps maintain cleanliness, protect
+                water sources and support healthier communities.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3 id="faqQuestion3">
+                How should household waste be managed?
+            </h3>
+
+            <p id="faqAnswer3">
+                Waste should be handled properly and should not be
+                thrown into drains, streets or water sources.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3 id="faqQuestion4">
+                How can villagers help keep their village clean?
+            </h3>
+
+            <p id="faqAnswer4">
+                Villagers can use toilets, avoid littering, maintain
+                drains, manage waste properly and participate in
+                community cleanliness activities.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3 id="faqQuestion5">
+                Where can I find government sanitation information?
+            </h3>
+
+            <p id="faqAnswer5">
+                Visit the Government Schemes section of Grama Seva.
+                The scheme buttons connect users to official government
+                information portals.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>🌾 Grama Seva</h2>
+
+        <p id="footerText">
+            Empowering rural communities through awareness and
+            accessible information.
+        </p>
+
+        <div class="footer-languages">
+            English &nbsp; | &nbsp; ಕನ್ನಡ &nbsp; | &nbsp; हिंदी
+        </div>
+
+    </div>
+
+    <p class="copyright" id="copyright">
+        © 2026 Grama Seva | Rural Sanitation & Government Schemes Portal
+    </p>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT - THREE LANGUAGE SYSTEM
+========================================================= -->
+
+<script>
+
+const translations = {
+
+    /* =====================================================
+       ENGLISH
+    ===================================================== */
+
+    en: {
+
+        logoSubtitle: "Rural Awareness Portal",
+
+        navHome: "Home",
+        navAbout: "About",
+        navSurvey: "Village Survey",
+        navProblems: "Problems",
+        navObjectives: "Objectives",
+        navSchemes: "Government Schemes",
+        navSolutions: "Solutions",
+        navFaq: "FAQ",
+
+        welcome: "WELCOME TO GRAMA SEVA",
+
+        heroTitle:
+            "Government Schemes<br><span>Made Simple for Villages</span>",
+
+        heroText:
+            "Find government schemes, sanitation information, village survey findings and practical solutions for cleaner and healthier rural communities.",
+
+        viewSchemes:
+            "🏛️ View Government Schemes",
+
+        viewSurvey:
+            "📋 View Survey",
+
+        quickSchemeTitle:
+            "Government Schemes",
+
+        quickSchemeText:
+            "Learn about sanitation-related government initiatives.",
+
+        quickSurveyTitle:
+            "Village Survey",
+
+        quickSurveyText:
+            "Understand the sanitation conditions observed during the survey.",
+
+        quickLanguageTitle:
+            "3 Languages",
+
+        quickLanguageText:
+            "English, Kannada and Hindi.",
+
+        aboutLabel:
+            "ABOUT THE PROJECT",
+
+        aboutHeading:
+            "Sewage Management & Rural Sanitation",
+
+        aboutDescription:
+            "Understanding sanitation conditions and creating awareness among rural communities.",
+
+        aboutText1:
+            "Sewage management is an important part of rural sanitation and public health. It involves the safe collection, treatment and disposal of wastewater and human waste.",
+
+        aboutText2:
+            "Our project focused on understanding sanitation conditions in the village of Patan, studying toilet usage and drainage conditions, identifying problems and creating awareness among villagers.",
+
+        aboutText3:
+            "The activity also focused on government sanitation initiatives, practical solutions and encouraging community participation for a cleaner and healthier village.",
+
+        surveyLabel:
+            "FIELD SURVEY",
+
+        surveyHeading:
+            "Village Survey",
+
+        surveyDescription:
+            "What we observed during our visit and interaction with villagers.",
+
+        survey1Title:
+            "Toilet Availability",
+
+        survey1Text:
+            "Toilets were available in the village, but some people still preferred going outside because of habits and lack of awareness.",
+
+        survey2Title:
+            "Drainage Condition",
+
+        survey2Text:
+            "The drainage system was not properly maintained in some areas.",
+
+        survey3Title:
+            "Wastewater Collection",
+
+        survey3Text:
+            "Wastewater collected in certain places and created unhygienic conditions.",
+
+        survey4Title:
+            "Awareness",
+
+        survey4Text:
+            "Awareness about sanitation, hygiene and sewage management was an important area requiring attention.",
+
+        problemLabel:
+            "PROBLEMS IDENTIFIED",
+
+        problemHeading:
+            "Major Sanitation Problems",
+
+        problemDescription:
+            "Problems identified during the village survey.",
+
+        problem1:
+            "Some villagers still practiced open defecation despite having access to toilets.",
+
+        problem2:
+            "Poor maintenance of drainage systems led to wastewater accumulation.",
+
+        problem3:
+            "Stagnant wastewater created unhygienic conditions.",
+
+        problem4:
+            "Awareness about sanitation and hygiene was limited.",
+
+        problem5:
+            "Nearby water sources could be affected by improper waste disposal.",
+
+        problem6:
+            "Community participation in cleanliness and drainage maintenance needed improvement.",
+
+        objectiveLabel:
+            "PROJECT OBJECTIVES",
+
+        objectiveHeading:
+            "What We Wanted to Achieve",
+
+        objectiveDescription:
+            "Main objectives of the sewage management awareness project.",
+
+        objective1:
+            "Study existing sewage management and sanitation conditions.",
+
+        objective2:
+            "Create awareness about proper sewage management and maintaining a hygienic environment.",
+
+        objective3:
+            "Educate villagers about health risks associated with poor sanitation and improper wastewater management.",
+
+        objective4:
+            "Spread awareness about government sanitation initiatives.",
+
+        objective5:
+            "Encourage regular toilet use and maintenance.",
+
+        objective6:
+            "Suggest practical solutions for improving drainage and sewage management.",
+
+        objective7:
+            "Contribute to a cleaner, healthier and more sustainable village environment.",
+
+        questionLabel:
+            "SURVEY QUESTIONS",
+
+        questionHeading:
+            "Questions Asked by Villagers",
+
+        questionDescription:
+            "Important questions discussed during the awareness activity.",
+
+        question1:
+            "Why is it important to use toilets?",
+
+        answer1:
+            "Using toilets helps maintain cleanliness, prevent the spread of diseases, protect water sources and provide privacy and safety.",
+
+        question2:
+            "What diseases can spread due to open defecation?",
+
+        answer2:
+            "Poor sanitation and open defecation can increase the risk of diseases such as diarrheal illnesses and other infections.",
+
+        question3:
+            "How does poor sewage management affect health?",
+
+        answer3:
+            "Improper wastewater disposal creates unhygienic conditions, encourages mosquito breeding and can contaminate water sources.",
+
+        question4:
+            "Why does water collect near drains?",
+
+        answer4:
+            "Water can accumulate when drains are blocked by waste, mud or other debris and wastewater cannot flow properly.",
+
+        question5:
+            "What can we do to keep drains clean?",
+
+        answer5:
+            "Avoid throwing plastic, food waste and garbage into drains and maintain drainage channels regularly.",
+
+        question6:
+            "What are the benefits of proper drainage systems?",
+
+        answer6:
+            "Proper drainage helps prevent water stagnation, reduces mosquito breeding, improves cleanliness and protects public health.",
+
+        question7:
+            "Are there government schemes that support sanitation?",
+
+        answer7:
+            "Yes. Government initiatives such as Swachh Bharat Mission Grameen support sanitation, toilet usage and village cleanliness.",
+
+        question8:
+            "How can we maintain toilets properly?",
+
+        answer8:
+            "Toilets should be used regularly, kept clean, supplied with necessary water and maintained properly.",
+
+        question9:
+            "What should we do with household waste?",
+
+        answer9:
+            "Household waste should be handled properly and should not be thrown into drains or water sources.",
+
+        question10:
+            "Why should wastewater not be allowed to stagnate?",
+
+        answer10:
+            "Stagnant wastewater can create unhygienic surroundings and increase environmental and health risks.",
+
+        solutionLabel:
+            "SOLUTIONS PROVIDED",
+
+        solutionHeading:
+            "Practical Solutions",
+
+        solutionDescription:
+            "Simple steps that villagers can follow in their daily lives.",
+
+        solution1Title:
+            "Regular Toilet Use",
+
+        solution1Text:
+            "Encourage everyone to use toilets regularly and avoid open defecation.",
+
+        solution2Title:
+            "Maintain Drains",
+
+        solution2Text:
+            "Keep drainage channels clean and allow wastewater to flow properly.",
+
+        solution3Title:
+            "Proper Waste Disposal",
+
+        solution3Text:
+            "Do not throw plastic, food waste or other garbage into drainage systems.",
+
+        solution4Title:
+            "Community Participation",
+
+        solution4Text:
+            "Encourage children, youngsters and community members to participate in cleanliness activities.",
+
+        solution5Title:
+            "Awareness",
+
+        solution5Text:
+            "Explain the importance of sanitation, hygiene and sewage management in simple language.",
+
+        solution6Title:
+            "Use Government Support",
+
+        solution6Text:
+            "Make villagers aware of relevant government sanitation programmes and available support.",
+
+        schemeLabel:
+            "GOVERNMENT SUPPORT",
+
+        schemeHeading:
+            "Government Schemes",
+
+        schemeDescription:
+            "Important sanitation and wastewater-related government initiatives.",
+
+        scheme1Title:
+            "Swachh Bharat Mission – Grameen",
+
+        scheme1Text:
+            "Focuses on rural sanitation, toilet use, ODF sustainability, solid waste management and liquid waste management.",
+
+        scheme1Point1:
+            "Rural sanitation",
+
+        scheme1Point2:
+            "Toilet usage",
+
+        scheme1Point3:
+            "Solid and liquid waste management",
+
+        scheme1Button:
+            "📝 Citizen Registration / Apply",
+
+        scheme1Info:
+            "Official Information →",
+
+        scheme2Title:
+            "Swachh Bharat Mission – Urban 2.0",
+
+        scheme2Text:
+            "Focuses on sustainable sanitation, wastewater treatment, solid waste management and cleaner cities.",
+
+        scheme2Point1:
+            "Wastewater treatment",
+
+        scheme2Point2:
+            "Sustainable sanitation",
+
+        scheme2Point3:
+            "Solid waste management",
+
+        scheme2Button:
+            "🌐 Official Portal",
+
+        scheme2Info:
+            "Official Information →",
+
+        scheme3Title:
+            "NAMASTE Scheme",
+
+        scheme3Text:
+            "Promotes the safety and dignity of sanitation workers and supports safer, mechanised sanitation work.",
+
+        scheme3Point1:
+            "Safety of sanitation workers",
+
+        scheme3Point2:
+            "Occupational safety training",
+
+        scheme3Point3:
+            "Safer sanitation practices",
+
+        scheme3Button:
+            "🌐 Official Information",
+
+        scheme3Info:
+            "Scheme Details →",
+
+        scheme4Title:
+            "Namami Gange Programme",
+
+        scheme4Text:
+            "Supports pollution reduction, sewage treatment, conservation and rejuvenation of the River Ganga.",
+
+        scheme4Point1:
+            "Sewage treatment",
+
+        scheme4Point2:
+            "Pollution reduction",
+
+        scheme4Point3:
+            "Public awareness",
+
+        scheme4Button:
+            "🌐 Official Information",
+
+        scheme4Info:
+            "Scheme Details →",
+
+        benefitLabel:
+            "BENEFITS",
+
+        benefitHeading:
+            "Benefits of Proper Sewage Management",
+
+        benefitDescription:
+            "Proper sanitation benefits both rural communities and government systems.",
+
+        benefit1Title:
+            "Better Public Health",
+
+        benefit1Text:
+            "Proper sanitation helps reduce environmental and sanitation-related health risks.",
+
+        benefit2Title:
+            "Cleaner Water",
+
+        benefit2Text:
+            "Proper wastewater management helps protect water sources from contamination.",
+
+        benefit3Title:
+            "Cleaner Environment",
+
+        benefit3Text:
+            "Proper waste and sewage management improves cleanliness in villages.",
+
+        benefit4Title:
+            "Better Government Implementation",
+
+        benefit4Text:
+            "Community participation helps sanitation programmes achieve better results.",
+
+        awarenessLabel:
+            "AWARENESS",
+
+        awarenessHeading:
+            "Sanitation & Sewage Management",
+
+        awarenessDescription:
+            "Small changes in daily habits can create a cleaner and healthier village.",
+
+        awareness1Title:
+            "Use Toilets",
+
+        awareness1Text:
+            "Always use toilets and keep them clean.",
+
+        awareness2Title:
+            "Protect Water",
+
+        awareness2Text:
+            "Keep sewage and waste away from drinking water sources.",
+
+        awareness3Title:
+            "Manage Waste",
+
+        awareness3Text:
+            "Separate waste and dispose of it through proper systems.",
+
+        awareness4Title:
+            "Keep the Village Clean",
+
+        awareness4Text:
+            "Do not throw waste into streets, drains or water bodies.",
+
+        societyLabel:
+            "SOCIAL RELEVANCE",
+
+        societyHeading:
+            "Relevance to Society",
+
+        societyText1:
+            "Proper sewage management directly contributes to public health, environmental protection and better quality of life.",
+
+        societyText2:
+            "Creating awareness among villagers can encourage healthier habits, regular toilet usage, proper waste disposal and community participation.",
+
+        societyText3:
+            "A clean village also supports sustainable rural development and helps communities make better use of sanitation facilities and government initiatives.",
+
+        conclusionLabel:
+            "CONCLUSION",
+
+        conclusionHeading:
+            "Towards a Cleaner Village",
+
+        conclusionText:
+            "Sewage management is not only a government responsibility. It requires awareness, proper habits and community participation. By using toilets, maintaining drains, managing waste properly and supporting sanitation initiatives, rural communities can create a cleaner and healthier environment.",
+
+        faqLabel:
+            "HELP & INFORMATION",
+
+        faqHeading:
+            "Frequently Asked Questions",
+
+        faqQuestion1:
+            "What is sewage management?",
+
+        faqAnswer1:
+            "Sewage management means the proper collection, treatment and safe disposal of wastewater.",
+
+        faqQuestion2:
+            "Why is sanitation important?",
+
+        faqAnswer2:
+            "Good sanitation helps maintain cleanliness, protect water sources and support healthier communities.",
+
+        faqQuestion3:
+            "How should household waste be managed?",
+
+        faqAnswer3:
+            "Waste should be handled properly and should not be thrown into drains, streets or water sources.",
+
+        faqQuestion4:
+            "How can villagers help keep their village clean?",
+
+        faqAnswer4:
+            "Villagers can use toilets, avoid littering, maintain drains, manage waste properly and participate in community cleanliness activities.",
+
+        faqQuestion5:
+            "Where can I find government sanitation information?",
+
+        faqAnswer5:
+            "Visit the Government Schemes section of Grama Seva. The scheme buttons connect users to official government information portals.",
+
+        footerText:
+            "Empowering rural communities through awareness and accessible information.",
+
+        copyright:
+            "© 2026 Grama Seva | Rural Sanitation & Government Schemes Portal"
+    },
+
+
+    /* =====================================================
+       KANNADA
+    ===================================================== */
+
+    kn: {
+
+        logoSubtitle: "ಗ್ರಾಮೀಣ ಜಾಗೃತಿ ಪೋರ್ಟಲ್",
+
+        navHome: "ಮುಖಪುಟ",
+        navAbout: "ಯೋಜನೆಯ ಬಗ್ಗೆ",
+        navSurvey: "ಗ್ರಾಮ ಸಮೀಕ್ಷೆ",
+        navProblems: "ಸಮಸ್ಯೆಗಳು",
+        navObjectives: "ಉದ್ದೇಶಗಳು",
+        navSchemes: "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು",
+        navSolutions: "ಪರಿಹಾರಗಳು",
+        navFaq: "ಸಾಮಾನ್ಯ ಪ್ರಶ್ನೆಗಳು",
+
+        welcome: "ಗ್ರಾಮ ಸೇವೆಗೆ ಸ್ವಾಗತ",
+
+        heroTitle:
+            "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು<br><span>ಗ್ರಾಮಗಳಿಗೆ ಸರಳವಾಗಿ</span>",
+
+        heroText:
+            "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು, ನೈರ್ಮಲ್ಯ ಮಾಹಿತಿ, ಗ್ರಾಮ ಸಮೀಕ್ಷೆಯ ಫಲಿತಾಂಶಗಳು ಮತ್ತು ಸ್ವಚ್ಛ ಹಾಗೂ ಆರೋಗ್ಯಕರ ಗ್ರಾಮಕ್ಕಾಗಿ ಪ್ರಾಯೋಗಿಕ ಪರಿಹಾರಗಳನ್ನು ತಿಳಿಯಿರಿ.",
+
+        viewSchemes:
+            "🏛️ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳನ್ನು ನೋಡಿ",
+
+        viewSurvey:
+            "📋 ಸಮೀಕ್ಷೆಯನ್ನು ನೋಡಿ",
+
+        quickSchemeTitle:
+            "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು",
+
+        quickSchemeText:
+            "ನೈರ್ಮಲ್ಯಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ.",
+
+        quickSurveyTitle:
+            "ಗ್ರಾಮ ಸಮೀಕ್ಷೆ",
+
+        quickSurveyText:
+            "ಸಮೀಕ್ಷೆಯಲ್ಲಿ ಗಮನಿಸಿದ ನೈರ್ಮಲ್ಯ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ತಿಳಿಯಿರಿ.",
+
+        quickLanguageTitle:
+            "3 ಭಾಷೆಗಳು",
+
+        quickLanguageText:
+            "ಇಂಗ್ಲಿಷ್, ಕನ್ನಡ ಮತ್ತು ಹಿಂದಿ.",
+
+        aboutLabel:
+            "ಯೋಜನೆಯ ಬಗ್ಗೆ",
+
+        aboutHeading:
+            "ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ ಮತ್ತು ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ",
+
+        aboutDescription:
+            "ನೈರ್ಮಲ್ಯ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡು ಗ್ರಾಮೀಣ ಸಮುದಾಯಗಳಲ್ಲಿ ಜಾಗೃತಿ ಮೂಡಿಸುವುದು.",
+
+        aboutText1:
+            "ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆಯು ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ ಮತ್ತು ಸಾರ್ವಜನಿಕ ಆರೋಗ್ಯದ ಪ್ರಮುಖ ಭಾಗವಾಗಿದೆ. ಇದು ತ್ಯಾಜ್ಯ ನೀರು ಮತ್ತು ಮಾನವ ತ್ಯಾಜ್ಯವನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸುವುದು, ಸಂಸ್ಕರಿಸುವುದು ಮತ್ತು ವಿಲೇವಾರಿ ಮಾಡುವುದನ್ನು ಒಳಗೊಂಡಿದೆ.",
+
+        aboutText2:
+            "ನಮ್ಮ ಯೋಜನೆಯು ಪಾಟಣ ಗ್ರಾಮದ ನೈರ್ಮಲ್ಯ ಪರಿಸ್ಥಿತಿಗಳು, ಶೌಚಾಲಯ ಬಳಕೆ ಮತ್ತು ಚರಂಡಿ ವ್ಯವಸ್ಥೆಯನ್ನು ಅಧ್ಯಯನ ಮಾಡಿ ಸಮಸ್ಯೆಗಳನ್ನು ಗುರುತಿಸಿ ಗ್ರಾಮಸ್ಥರಲ್ಲಿ ಜಾಗೃತಿ ಮೂಡಿಸುವುದರ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸಿದೆ.",
+
+        aboutText3:
+            "ಚಟುವಟಿಕೆಯು ಸರ್ಕಾರಿ ನೈರ್ಮಲ್ಯ ಯೋಜನೆಗಳು, ಪ್ರಾಯೋಗಿಕ ಪರಿಹಾರಗಳು ಮತ್ತು ಸ್ವಚ್ಛ ಹಾಗೂ ಆರೋಗ್ಯಕರ ಗ್ರಾಮಕ್ಕಾಗಿ ಸಮುದಾಯದ ಸಹಭಾಗಿತ್ವವನ್ನು ಉತ್ತೇಜಿಸುವುದರ ಮೇಲೂ ಕೇಂದ್ರೀಕರಿಸಿತು.",
+
+        surveyLabel:
+            "ಕ್ಷೇತ್ರ ಸಮೀಕ್ಷೆ",
+
+        surveyHeading:
+            "ಗ್ರಾಮ ಸಮೀಕ್ಷೆ",
+
+        surveyDescription:
+            "ಗ್ರಾಮಕ್ಕೆ ಭೇಟಿ ನೀಡಿ ಗ್ರಾಮಸ್ಥರೊಂದಿಗೆ ನಡೆಸಿದ ಸಂವಾದದಲ್ಲಿ ನಾವು ಗಮನಿಸಿದ ವಿಷಯಗಳು.",
+
+        survey1Title:
+            "ಶೌಚಾಲಯಗಳ ಲಭ್ಯತೆ",
+
+        survey1Text:
+            "ಗ್ರಾಮದಲ್ಲಿ ಶೌಚಾಲಯಗಳು ಲಭ್ಯವಿದ್ದರೂ ಕೆಲವು ಜನರು ಅಭ್ಯಾಸ ಮತ್ತು ಜಾಗೃತಿಯ ಕೊರತೆಯಿಂದ ಹೊರಗೆ ಹೋಗುವುದನ್ನು ಮುಂದುವರಿಸಿದ್ದರು.",
+
+        survey2Title:
+            "ಚರಂಡಿ ಪರಿಸ್ಥಿತಿ",
+
+        survey2Text:
+            "ಕೆಲವು ಪ್ರದೇಶಗಳಲ್ಲಿ ಚರಂಡಿ ವ್ಯವಸ್ಥೆಯನ್ನು ಸರಿಯಾಗಿ ನಿರ್ವಹಿಸಲಾಗುತ್ತಿರಲಿಲ್ಲ.",
+
+        survey3Title:
+            "ತ್ಯಾಜ್ಯ ನೀರಿನ ಸಂಗ್ರಹ",
+
+        survey3Text:
+            "ಕೆಲವು ಸ್ಥಳಗಳಲ್ಲಿ ತ್ಯಾಜ್ಯ ನೀರು ಸಂಗ್ರಹವಾಗಿ ಅಸ್ವಚ್ಛ ಪರಿಸ್ಥಿತಿಯನ್ನು ಉಂಟುಮಾಡುತ್ತಿತ್ತು.",
+
+        survey4Title:
+            "ಜಾಗೃತಿ",
+
+        survey4Text:
+            "ನೈರ್ಮಲ್ಯ, ಸ್ವಚ್ಛತೆ ಮತ್ತು ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆಯ ಬಗ್ಗೆ ಜಾಗೃತಿ ಹೆಚ್ಚಿಸುವ ಅಗತ್ಯವಿತ್ತು.",
+
+        problemLabel:
+            "ಗುರುತಿಸಲಾದ ಸಮಸ್ಯೆಗಳು",
+
+        problemHeading:
+            "ಪ್ರಮುಖ ನೈರ್ಮಲ್ಯ ಸಮಸ್ಯೆಗಳು",
+
+        problemDescription:
+            "ಗ್ರಾಮ ಸಮೀಕ್ಷೆಯಲ್ಲಿ ಗುರುತಿಸಲಾದ ಸಮಸ್ಯೆಗಳು.",
+
+        problem1:
+            "ಶೌಚಾಲಯಗಳ ಲಭ್ಯತೆ ಇದ್ದರೂ ಕೆಲವು ಗ್ರಾಮಸ್ಥರು ಇನ್ನೂ ಬಯಲು ಶೌಚ ಮಾಡುತ್ತಿದ್ದರು.",
+
+        problem2:
+            "ಚರಂಡಿ ವ್ಯವಸ್ಥೆಯ ಸರಿಯಾದ ನಿರ್ವಹಣೆಯ ಕೊರತೆಯಿಂದ ತ್ಯಾಜ್ಯ ನೀರು ಸಂಗ್ರಹವಾಗುತ್ತಿತ್ತು.",
+
+        problem3:
+            "ನಿಂತ ತ್ಯಾಜ್ಯ ನೀರು ಅಸ್ವಚ್ಛ ಪರಿಸ್ಥಿತಿಯನ್ನು ಉಂಟುಮಾಡುತ್ತಿತ್ತು.",
+
+        problem4:
+            "ನೈರ್ಮಲ್ಯ ಮತ್ತು ಸ್ವಚ್ಛತೆಯ ಬಗ್ಗೆ ಜಾಗೃತಿ ಸೀಮಿತವಾಗಿತ್ತು.",
+
+        problem5:
+            "ಸರಿಯಾದ ತ್ಯಾಜ್ಯ ವಿಲೇವಾರಿ ಇಲ್ಲದಿದ್ದರೆ ಸಮೀಪದ ನೀರಿನ ಮೂಲಗಳು ಪರಿಣಾಮಕ್ಕೊಳಗಾಗಬಹುದು.",
+
+        problem6:
+            "ಸ್ವಚ್ಛತೆ ಮತ್ತು ಚರಂಡಿ ನಿರ್ವಹಣೆಯಲ್ಲಿ ಸಮುದಾಯದ ಸಹಭಾಗಿತ್ವವನ್ನು ಹೆಚ್ಚಿಸುವ ಅಗತ್ಯವಿತ್ತು.",
+
+        objectiveLabel:
+            "ಯೋಜನೆಯ ಉದ್ದೇಶಗಳು",
+
+        objectiveHeading:
+            "ನಾವು ಸಾಧಿಸಲು ಬಯಸಿದ್ದು",
+
+        objectiveDescription:
+            "ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆಯ ಜಾಗೃತಿ ಯೋಜನೆಯ ಪ್ರಮುಖ ಉದ್ದೇಶಗಳು.",
+
+        objective1:
+            "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ ಮತ್ತು ನೈರ್ಮಲ್ಯ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ಅಧ್ಯಯನ ಮಾಡುವುದು.",
+
+        objective2:
+            "ಸರಿಯಾದ ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ ಮತ್ತು ಸ್ವಚ್ಛ ಪರಿಸರದ ಬಗ್ಗೆ ಜಾಗೃತಿ ಮೂಡಿಸುವುದು.",
+
+        objective3:
+            "ಕೆಟ್ಟ ನೈರ್ಮಲ್ಯ ಮತ್ತು ತ್ಯಾಜ್ಯ ನೀರಿನ ನಿರ್ವಹಣೆಯಿಂದ ಉಂಟಾಗುವ ಆರೋಗ್ಯದ ಅಪಾಯಗಳ ಬಗ್ಗೆ ತಿಳಿಸುವುದು.",
+
+        objective4:
+            "ಸರ್ಕಾರಿ ನೈರ್ಮಲ್ಯ ಯೋಜನೆಗಳ ಬಗ್ಗೆ ಜಾಗೃತಿ ಮೂಡಿಸುವುದು.",
+
+        objective5:
+            "ನಿಯಮಿತ ಶೌಚಾಲಯ ಬಳಕೆ ಮತ್ತು ನಿರ್ವಹಣೆಯನ್ನು ಉತ್ತೇಜಿಸುವುದು.",
+
+        objective6:
+            "ಚರಂಡಿ ಮತ್ತು ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆಯನ್ನು ಸುಧಾರಿಸಲು ಪ್ರಾಯೋಗಿಕ ಪರಿಹಾರಗಳನ್ನು ಸೂಚಿಸುವುದು.",
+
+        objective7:
+            "ಸ್ವಚ್ಛ, ಆರೋಗ್ಯಕರ ಮತ್ತು ಸುಸ್ಥಿರ ಗ್ರಾಮೀಣ ಪರಿಸರ ನಿರ್ಮಾಣಕ್ಕೆ ಕೊಡುಗೆ ನೀಡುವುದು.",
+
+        questionLabel:
+            "ಸಮೀಕ್ಷೆಯ ಪ್ರಶ್ನೆಗಳು",
+
+        questionHeading:
+            "ಗ್ರಾಮಸ್ಥರು ಕೇಳಿದ ಪ್ರಶ್ನೆಗಳು",
+
+        questionDescription:
+            "ಜಾಗೃತಿ ಚಟುವಟಿಕೆಯ ಸಮಯದಲ್ಲಿ ಚರ್ಚಿಸಲಾದ ಪ್ರಮುಖ ಪ್ರಶ್ನೆಗಳು.",
+
+        question1:
+            "ಶೌಚಾಲಯಗಳನ್ನು ಬಳಸುವುದು ಏಕೆ ಮುಖ್ಯ?",
+
+        answer1:
+            "ಶೌಚಾಲಯ ಬಳಸುವುದರಿಂದ ಸ್ವಚ್ಛತೆ ಕಾಪಾಡಬಹುದು, ರೋಗಗಳ ಹರಡುವಿಕೆಯನ್ನು ತಡೆಯಬಹುದು, ನೀರಿನ ಮೂಲಗಳನ್ನು ರಕ್ಷಿಸಬಹುದು ಮತ್ತು ಗೌಪ್ಯತೆ ಹಾಗೂ ಸುರಕ್ಷತೆಯನ್ನು ಒದಗಿಸಬಹುದು.",
+
+        question2:
+            "ಬಯಲು ಶೌಚದಿಂದ ಯಾವ ರೋಗಗಳು ಹರಡಬಹುದು?",
+
+        answer2:
+            "ಕೆಟ್ಟ ನೈರ್ಮಲ್ಯ ಮತ್ತು ಬಯಲು ಶೌಚದಿಂದ ಅತಿಸಾರ ಮತ್ತು ಇತರ ಸೋಂಕುಗಳಂತಹ ರೋಗಗಳ ಅಪಾಯ ಹೆಚ್ಚಾಗಬಹುದು.",
+
+        question3:
+            "ಕೆಟ್ಟ ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ ಆರೋಗ್ಯದ ಮೇಲೆ ಹೇಗೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ?",
+
+        answer3:
+            "ಸರಿಯಾಗಿ ವಿಲೇವಾರಿ ಮಾಡದ ತ್ಯಾಜ್ಯ ನೀರು ಅಸ್ವಚ್ಛ ಪರಿಸ್ಥಿತಿಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ, ಸೊಳ್ಳೆಗಳ ಉತ್ಪತ್ತಿಗೆ ಕಾರಣವಾಗುತ್ತದೆ ಮತ್ತು ನೀರಿನ ಮೂಲಗಳನ್ನು ಕಲುಷಿತಗೊಳಿಸಬಹುದು.",
+
+        question4:
+            "ಚರಂಡಿಗಳ ಬಳಿ ನೀರು ಏಕೆ ಸಂಗ್ರಹವಾಗುತ್ತದೆ?",
+
+        answer4:
+            "ಕಸ, ಮಣ್ಣು ಅಥವಾ ಇತರ ವಸ್ತುಗಳಿಂದ ಚರಂಡಿಗಳು ಮುಚ್ಚಿಕೊಂಡಾಗ ನೀರು ಸಂಗ್ರಹವಾಗಬಹುದು.",
+
+        question5:
+            "ಚರಂಡಿಗಳನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಲು ಏನು ಮಾಡಬಹುದು?",
+
+        answer5:
+            "ಪ್ಲಾಸ್ಟಿಕ್, ಆಹಾರ ತ್ಯಾಜ್ಯ ಮತ್ತು ಕಸವನ್ನು ಚರಂಡಿಗಳಲ್ಲಿ ಹಾಕಬೇಡಿ ಮತ್ತು ಚರಂಡಿಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ನಿರ್ವಹಿಸಿ.",
+
+        question6:
+            "ಸರಿಯಾದ ಚರಂಡಿ ವ್ಯವಸ್ಥೆಯ ಪ್ರಯೋಜನಗಳೇನು?",
+
+        answer6:
+            "ಸರಿಯಾದ ಚರಂಡಿ ವ್ಯವಸ್ಥೆಯು ನೀರು ನಿಲ್ಲುವುದನ್ನು ತಡೆಯುತ್ತದೆ, ಸೊಳ್ಳೆಗಳ ಉತ್ಪತ್ತಿಯನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ ಮತ್ತು ಸಾರ್ವಜನಿಕ ಆರೋಗ್ಯವನ್ನು ರಕ್ಷಿಸುತ್ತದೆ.",
+
+        question7:
+            "ನೈರ್ಮಲ್ಯವನ್ನು ಬೆಂಬಲಿಸುವ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳಿವೆಯೇ?",
+
+        answer7:
+            "ಹೌದು. ಸ್ವಚ್ಛ ಭಾರತ್ ಮಿಷನ್ ಗ್ರಾಮೀಣದಂತಹ ಯೋಜನೆಗಳು ನೈರ್ಮಲ್ಯ, ಶೌಚಾಲಯ ಬಳಕೆ ಮತ್ತು ಗ್ರಾಮ ಸ್ವಚ್ಛತೆಯನ್ನು ಉತ್ತೇಜಿಸುತ್ತವೆ.",
+
+        question8:
+            "ಶೌಚಾಲಯಗಳನ್ನು ಸರಿಯಾಗಿ ಹೇಗೆ ನಿರ್ವಹಿಸಬೇಕು?",
+
+        answer8:
+            "ಶೌಚಾಲಯಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಬಳಸಿ, ಸ್ವಚ್ಛವಾಗಿಡಿ, ಅಗತ್ಯ ನೀರು ಒದಗಿಸಿ ಮತ್ತು ಸರಿಯಾಗಿ ನಿರ್ವಹಿಸಬೇಕು.",
+
+        question9:
+            "ಮನೆಯ ತ್ಯಾಜ್ಯವನ್ನು ಏನು ಮಾಡಬೇಕು?",
+
+        answer9:
+            "ಮನೆಯ ತ್ಯಾಜ್ಯವನ್ನು ಸರಿಯಾಗಿ ನಿರ್ವಹಿಸಬೇಕು ಮತ್ತು ಚರಂಡಿ ಅಥವಾ ನೀರಿನ ಮೂಲಗಳಲ್ಲಿ ಎಸೆಯಬಾರದು.",
+
+        question10:
+            "ತ್ಯಾಜ್ಯ ನೀರು ನಿಲ್ಲಲು ಏಕೆ ಬಿಡಬಾರದು?",
+
+        answer10:
+            "ನಿಂತ ತ್ಯಾಜ್ಯ ನೀರು ಅಸ್ವಚ್ಛ ಪರಿಸರವನ್ನು ಉಂಟುಮಾಡಿ ಪರಿಸರ ಮತ್ತು ಆರೋಗ್ಯದ ಅಪಾಯಗಳನ್ನು ಹೆಚ್ಚಿಸಬಹುದು.",
+
+        solutionLabel:
+            "ಒದಗಿಸಿದ ಪರಿಹಾರಗಳು",
+
+        solutionHeading:
+            "ಪ್ರಾಯೋಗಿಕ ಪರಿಹಾರಗಳು",
+
+        solutionDescription:
+            "ಗ್ರಾಮಸ್ಥರು ತಮ್ಮ ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಅನುಸರಿಸಬಹುದಾದ ಸರಳ ಕ್ರಮಗಳು.",
+
+        solution1Title:
+            "ನಿಯಮಿತ ಶೌಚಾಲಯ ಬಳಕೆ",
+
+        solution1Text:
+            "ಎಲ್ಲರೂ ನಿಯಮಿತವಾಗಿ ಶೌಚಾಲಯ ಬಳಸುವಂತೆ ಪ್ರೋತ್ಸಾಹಿಸಿ ಮತ್ತು ಬಯಲು ಶೌಚವನ್ನು ತಪ್ಪಿಸಿ.",
+
+        solution2Title:
+            "ಚರಂಡಿಗಳ ನಿರ್ವಹಣೆ",
+
+        solution2Text:
+            "ಚರಂಡಿಗಳನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಿ ಮತ್ತು ತ್ಯಾಜ್ಯ ನೀರು ಸರಿಯಾಗಿ ಹರಿಯುವಂತೆ ಮಾಡಿ.",
+
+        solution3Title:
+            "ಸರಿಯಾದ ತ್ಯಾಜ್ಯ ವಿಲೇವಾರಿ",
+
+        solution3Text:
+            "ಪ್ಲಾಸ್ಟಿಕ್, ಆಹಾರ ತ್ಯಾಜ್ಯ ಅಥವಾ ಇತರ ಕಸವನ್ನು ಚರಂಡಿಗಳಲ್ಲಿ ಹಾಕಬೇಡಿ.",
+
+        solution4Title:
+            "ಸಮುದಾಯದ ಸಹಭಾಗಿತ್ವ",
+
+        solution4Text:
+            "ಮಕ್ಕಳು, ಯುವಕರು ಮತ್ತು ಸಮುದಾಯದ ಸದಸ್ಯರು ಸ್ವಚ್ಛತಾ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಭಾಗವಹಿಸುವಂತೆ ಪ್ರೋತ್ಸಾಹಿಸಿ.",
+
+        solution5Title:
+            "ಜಾಗೃತಿ",
+
+        solution5Text:
+            "ನೈರ್ಮಲ್ಯ, ಸ್ವಚ್ಛತೆ ಮತ್ತು ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆಯ ಮಹತ್ವವನ್ನು ಸರಳ ಭಾಷೆಯಲ್ಲಿ ವಿವರಿಸಿ.",
+
+        solution6Title:
+            "ಸರ್ಕಾರಿ ಸಹಾಯ ಬಳಸಿ",
+
+        solution6Text:
+            "ಸಂಬಂಧಿತ ಸರ್ಕಾರಿ ನೈರ್ಮಲ್ಯ ಯೋಜನೆಗಳು ಮತ್ತು ಲಭ್ಯವಿರುವ ಸಹಾಯದ ಬಗ್ಗೆ ಗ್ರಾಮಸ್ಥರಿಗೆ ತಿಳಿಸಿ.",
+
+        schemeLabel:
+            "ಸರ್ಕಾರಿ ಬೆಂಬಲ",
+
+        schemeHeading:
+            "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು",
+
+        schemeDescription:
+            "ನೈರ್ಮಲ್ಯ ಮತ್ತು ತ್ಯಾಜ್ಯ ನೀರಿಗೆ ಸಂಬಂಧಿಸಿದ ಪ್ರಮುಖ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು.",
+
+        scheme1Title:
+            "ಸ್ವಚ್ಛ ಭಾರತ್ ಮಿಷನ್ – ಗ್ರಾಮೀಣ",
+
+        scheme1Text:
+            "ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ, ಶೌಚಾಲಯ ಬಳಕೆ, ODF ಸ್ಥಿರತೆ ಮತ್ತು ಘನ ಹಾಗೂ ದ್ರವ ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆಯ ಮೇಲೆ ಗಮನಹರಿಸುತ್ತದೆ.",
+
+        scheme1Point1:
+            "ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ",
+
+        scheme1Point2:
+            "ಶೌಚಾಲಯ ಬಳಕೆ",
+
+        scheme1Point3:
+            "ಘನ ಮತ್ತು ದ್ರವ ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆ",
+
+        scheme1Button:
+            "📝 ನಾಗರಿಕ ನೋಂದಣಿ / ಅರ್ಜಿ",
+
+        scheme1Info:
+            "ಅಧಿಕೃತ ಮಾಹಿತಿ →",
+
+        scheme2Title:
+            "ಸ್ವಚ್ಛ ಭಾರತ್ ಮಿಷನ್ – ಅರ್ಬನ್ 2.0",
+
+        scheme2Text:
+            "ಸುಸ್ಥಿರ ನೈರ್ಮಲ್ಯ, ತ್ಯಾಜ್ಯ ನೀರಿನ ಸಂಸ್ಕರಣೆ, ಘನ ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆ ಮತ್ತು ಸ್ವಚ್ಛ ನಗರಗಳ ಮೇಲೆ ಗಮನಹರಿಸುತ್ತದೆ.",
+
+        scheme2Point1:
+            "ತ್ಯಾಜ್ಯ ನೀರಿನ ಸಂಸ್ಕರಣೆ",
+
+        scheme2Point2:
+            "ಸುಸ್ಥಿರ ನೈರ್ಮಲ್ಯ",
+
+        scheme2Point3:
+            "ಘನ ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆ",
+
+        scheme2Button:
+            "🌐 ಅಧಿಕೃತ ಪೋರ್ಟಲ್",
+
+        scheme2Info:
+            "ಅಧಿಕೃತ ಮಾಹಿತಿ →",
+
+        scheme3Title:
+            "NAMASTE ಯೋಜನೆ",
+
+        scheme3Text:
+            "ನೈರ್ಮಲ್ಯ ಕಾರ್ಮಿಕರ ಸುರಕ್ಷತೆ ಮತ್ತು ಗೌರವವನ್ನು ಉತ್ತೇಜಿಸುತ್ತದೆ ಹಾಗೂ ಸುರಕ್ಷಿತ ಯಾಂತ್ರೀಕೃತ ನೈರ್ಮಲ್ಯ ಕೆಲಸಕ್ಕೆ ಬೆಂಬಲ ನೀಡುತ್ತದೆ.",
+
+        scheme3Point1:
+            "ನೈರ್ಮಲ್ಯ ಕಾರ್ಮಿಕರ ಸುರಕ್ಷತೆ",
+
+        scheme3Point2:
+            "ಕೆಲಸದ ಸುರಕ್ಷತಾ ತರಬೇತಿ",
+
+        scheme3Point3:
+            "ಸುರಕ್ಷಿತ ನೈರ್ಮಲ್ಯ ಪದ್ಧತಿಗಳು",
+
+        scheme3Button:
+            "🌐 ಅಧಿಕೃತ ಮಾಹಿತಿ",
+
+        scheme3Info:
+            "ಯೋಜನೆಯ ವಿವರಗಳು →",
+
+        scheme4Title:
+            "ನಮಾಮಿ ಗಂಗೆ ಕಾರ್ಯಕ್ರಮ",
+
+        scheme4Text:
+            "ಮಾಲಿನ್ಯ ಕಡಿತ, ಒಳಚರಂಡಿ ಸಂಸ್ಕರಣೆ, ಸಂರಕ್ಷಣೆ ಮತ್ತು ಗಂಗಾ ನದಿಯ ಪುನರುಜ್ಜೀವನಕ್ಕೆ ಬೆಂಬಲ ನೀಡುತ್ತದೆ.",
+
+        scheme4Point1:
+            "ಒಳಚರಂಡಿ ಸಂಸ್ಕರಣೆ",
+
+        scheme4Point2:
+            "ಮಾಲಿನ್ಯ ಕಡಿತ",
+
+        scheme4Point3:
+            "ಸಾರ್ವಜನಿಕ ಜಾಗೃತಿ",
+
+        scheme4Button:
+            "🌐 ಅಧಿಕೃತ ಮಾಹಿತಿ",
+
+        scheme4Info:
+            "ಯೋಜನೆಯ ವಿವರಗಳು →",
+
+        benefitLabel:
+            "ಪ್ರಯೋಜನಗಳು",
+
+        benefitHeading:
+            "ಸರಿಯಾದ ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆಯ ಪ್ರಯೋಜನಗಳು",
+
+        benefitDescription:
+            "ಸರಿಯಾದ ನೈರ್ಮಲ್ಯವು ಗ್ರಾಮೀಣ ಸಮುದಾಯ ಮತ್ತು ಸರ್ಕಾರಿ ವ್ಯವಸ್ಥೆಗಳಿಗೆ ಪ್ರಯೋಜನ ನೀಡುತ್ತದೆ.",
+
+        benefit1Title:
+            "ಉತ್ತಮ ಸಾರ್ವಜನಿಕ ಆರೋಗ್ಯ",
+
+        benefit1Text:
+            "ಸರಿಯಾದ ನೈರ್ಮಲ್ಯವು ಪರಿಸರ ಮತ್ತು ನೈರ್ಮಲ್ಯಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಆರೋಗ್ಯದ ಅಪಾಯಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+        benefit2Title:
+            "ಸ್ವಚ್ಛ ನೀರು",
+
+        benefit2Text:
+            "ಸರಿಯಾದ ತ್ಯಾಜ್ಯ ನೀರಿನ ನಿರ್ವಹಣೆಯು ನೀರಿನ ಮೂಲಗಳನ್ನು ಮಾಲಿನ್ಯದಿಂದ ರಕ್ಷಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+        benefit3Title:
+            "ಸ್ವಚ್ಛ ಪರಿಸರ",
+
+        benefit3Text:
+            "ಸರಿಯಾದ ತ್ಯಾಜ್ಯ ಮತ್ತು ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆಯು ಗ್ರಾಮಗಳ ಸ್ವಚ್ಛತೆಯನ್ನು ಸುಧಾರಿಸುತ್ತದೆ.",
+
+        benefit4Title:
+            "ಉತ್ತಮ ಸರ್ಕಾರಿ ಅನುಷ್ಠಾನ",
+
+        benefit4Text:
+            "ಸಮುದಾಯದ ಸಹಭಾಗಿತ್ವವು ನೈರ್ಮಲ್ಯ ಯೋಜನೆಗಳನ್ನು ಉತ್ತಮವಾಗಿ ಅನುಷ್ಠಾನಗೊಳಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+        awarenessLabel:
+            "ಜಾಗೃತಿ",
+
+        awarenessHeading:
+            "ನೈರ್ಮಲ್ಯ ಮತ್ತು ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ",
+
+        awarenessDescription:
+            "ದೈನಂದಿನ ಅಭ್ಯಾಸಗಳಲ್ಲಿ ಸಣ್ಣ ಬದಲಾವಣೆಗಳು ಸ್ವಚ್ಛ ಮತ್ತು ಆರೋಗ್ಯಕರ ಗ್ರಾಮವನ್ನು ನಿರ್ಮಿಸಬಹುದು.",
+
+        awareness1Title:
+            "ಶೌಚಾಲಯ ಬಳಸಿ",
+
+        awareness1Text:
+            "ಯಾವಾಗಲೂ ಶೌಚಾಲಯ ಬಳಸಿ ಮತ್ತು ಅದನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಿ.",
+
+        awareness2Title:
+            "ನೀರನ್ನು ರಕ್ಷಿಸಿ",
+
+        awareness2Text:
+            "ತ್ಯಾಜ್ಯ ನೀರು ಮತ್ತು ಕಸವನ್ನು ಕುಡಿಯುವ ನೀರಿನ ಮೂಲಗಳಿಂದ ದೂರವಿಡಿ.",
+
+        awareness3Title:
+            "ತ್ಯಾಜ್ಯ ನಿರ್ವಹಿಸಿ",
+
+        awareness3Text:
+            "ತ್ಯಾಜ್ಯವನ್ನು ವಿಂಗಡಿಸಿ ಮತ್ತು ಸೂಕ್ತ ವ್ಯವಸ್ಥೆಯ ಮೂಲಕ ವಿಲೇವಾರಿ ಮಾಡಿ.",
+
+        awareness4Title:
+            "ಗ್ರಾಮವನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+
+        awareness4Text:
+            "ರಸ್ತೆಗಳು, ಚರಂಡಿಗಳು ಅಥವಾ ಜಲಮೂಲಗಳಲ್ಲಿ ಕಸವನ್ನು ಎಸೆಯಬೇಡಿ.",
+
+        societyLabel:
+            "ಸಾಮಾಜಿಕ ಪ್ರಸ್ತುತತೆ",
+
+        societyHeading:
+            "ಸಮಾಜಕ್ಕೆ ಪ್ರಸ್ತುತತೆ",
+
+        societyText1:
+            "ಸರಿಯಾದ ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆಯು ಸಾರ್ವಜನಿಕ ಆರೋಗ್ಯ, ಪರಿಸರ ರಕ್ಷಣೆ ಮತ್ತು ಉತ್ತಮ ಜೀವನಮಟ್ಟಕ್ಕೆ ನೇರವಾಗಿ ಕೊಡುಗೆ ನೀಡುತ್ತದೆ.",
+
+        societyText2:
+            "ಗ್ರಾಮಸ್ಥರಲ್ಲಿ ಜಾಗೃತಿ ಮೂಡಿಸುವುದರಿಂದ ಆರೋಗ್ಯಕರ ಅಭ್ಯಾಸಗಳು, ನಿಯಮಿತ ಶೌಚಾಲಯ ಬಳಕೆ, ಸರಿಯಾದ ತ್ಯಾಜ್ಯ ವಿಲೇವಾರಿ ಮತ್ತು ಸಮುದಾಯದ ಸಹಭಾಗಿತ್ವವನ್ನು ಉತ್ತೇಜಿಸಬಹುದು.",
+
+        societyText3:
+            "ಸ್ವಚ್ಛ ಗ್ರಾಮವು ಸುಸ್ಥಿರ ಗ್ರಾಮೀಣ ಅಭಿವೃದ್ಧಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ ಮತ್ತು ನೈರ್ಮಲ್ಯ ಸೌಲಭ್ಯಗಳು ಹಾಗೂ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳನ್ನು ಉತ್ತಮವಾಗಿ ಬಳಸಿಕೊಳ್ಳಲು ಸಮುದಾಯಕ್ಕೆ ನೆರವಾಗುತ್ತದೆ.",
+
+        conclusionLabel:
+            "ಸಾರಾಂಶ",
+
+        conclusionHeading:
+            "ಸ್ವಚ್ಛ ಗ್ರಾಮದತ್ತ",
+
+        conclusionText:
+            "ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ ಕೇವಲ ಸರ್ಕಾರದ ಜವಾಬ್ದಾರಿ ಮಾತ್ರವಲ್ಲ. ಇದಕ್ಕೆ ಜಾಗೃತಿ, ಸರಿಯಾದ ಅಭ್ಯಾಸಗಳು ಮತ್ತು ಸಮುದಾಯದ ಸಹಭಾಗಿತ್ವ ಅಗತ್ಯ. ಶೌಚಾಲಯ ಬಳಕೆ, ಚರಂಡಿಗಳ ನಿರ್ವಹಣೆ, ಸರಿಯಾದ ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆ ಮತ್ತು ನೈರ್ಮಲ್ಯ ಯೋಜನೆಗಳಿಗೆ ಬೆಂಬಲ ನೀಡುವುದರಿಂದ ಗ್ರಾಮೀಣ ಸಮುದಾಯಗಳು ಸ್ವಚ್ಛ ಮತ್ತು ಆರೋಗ್ಯಕರ ಪರಿಸರವನ್ನು ನಿರ್ಮಿಸಬಹುದು.",
+
+        faqLabel:
+            "ಸಹಾಯ ಮತ್ತು ಮಾಹಿತಿ",
+
+        faqHeading:
+            "ಸಾಮಾನ್ಯವಾಗಿ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು",
+
+        faqQuestion1:
+            "ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ ಎಂದರೇನು?",
+
+        faqAnswer1:
+            "ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ ಎಂದರೆ ತ್ಯಾಜ್ಯ ನೀರನ್ನು ಸರಿಯಾಗಿ ಸಂಗ್ರಹಿಸುವುದು, ಸಂಸ್ಕರಿಸುವುದು ಮತ್ತು ಸುರಕ್ಷಿತವಾಗಿ ವಿಲೇವಾರಿ ಮಾಡುವುದು.",
+
+        faqQuestion2:
+            "ನೈರ್ಮಲ್ಯ ಏಕೆ ಮುಖ್ಯ?",
+
+        faqAnswer2:
+            "ಉತ್ತಮ ನೈರ್ಮಲ್ಯವು ಸ್ವಚ್ಛತೆ ಕಾಪಾಡಲು, ನೀರಿನ ಮೂಲಗಳನ್ನು ರಕ್ಷಿಸಲು ಮತ್ತು ಆರೋಗ್ಯಕರ ಸಮುದಾಯ ನಿರ್ಮಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+        faqQuestion3:
+            "ಮನೆಯ ತ್ಯಾಜ್ಯವನ್ನು ಹೇಗೆ ನಿರ್ವಹಿಸಬೇಕು?",
+
+        faqAnswer3:
+            "ತ್ಯಾಜ್ಯವನ್ನು ಸರಿಯಾಗಿ ನಿರ್ವಹಿಸಬೇಕು ಮತ್ತು ಚರಂಡಿ, ರಸ್ತೆ ಅಥವಾ ಜಲಮೂಲಗಳಲ್ಲಿ ಎಸೆಯಬಾರದು.",
+
+        faqQuestion4:
+            "ಗ್ರಾಮವನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಲು ಗ್ರಾಮಸ್ಥರು ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
+
+        faqAnswer4:
+            "ಗ್ರಾಮಸ್ಥರು ಶೌಚಾಲಯ ಬಳಸಿ, ಕಸ ಎಸೆಯುವುದನ್ನು ತಪ್ಪಿಸಿ, ಚರಂಡಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ ಮತ್ತು ಸಮುದಾಯದ ಸ್ವಚ್ಛತಾ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಭಾಗವಹಿಸಬಹುದು.",
+
+        faqQuestion5:
+            "ಸರ್ಕಾರಿ ನೈರ್ಮಲ್ಯ ಮಾಹಿತಿಯನ್ನು ಎಲ್ಲಿ ಪಡೆಯಬಹುದು?",
+
+        faqAnswer5:
+            "ಗ್ರಾಮ ಸೇವೆಯ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳ ವಿಭಾಗಕ್ಕೆ ಭೇಟಿ ನೀಡಿ. ಯೋಜನೆಗಳ ಬಟನ್‌ಗಳು ಅಧಿಕೃತ ಸರ್ಕಾರಿ ಮಾಹಿತಿ ಪೋರ್ಟಲ್‌ಗಳಿಗೆ ಸಂಪರ್ಕಿಸುತ್ತವೆ.",
+
+        footerText:
+            "ಜಾಗೃತಿ ಮತ್ತು ಸುಲಭವಾಗಿ ಲಭ್ಯವಿರುವ ಮಾಹಿತಿಯ ಮೂಲಕ ಗ್ರಾಮೀಣ ಸಮುದಾಯಗಳನ್ನು ಸಬಲಗೊಳಿಸುವುದು.",
+
+        copyright:
+            "© 2026 ಗ್ರಾಮ ಸೇವೆ | ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ ಮತ್ತು ಸರ್ಕಾರಿ ಯೋಜನೆಗಳ ಪೋರ್ಟಲ್"
+    },
+
+
+    /* =====================================================
+       HINDI
+    ===================================================== */
+
+    hi: {
+
+        logoSubtitle: "ग्रामीण जागरूकता पोर्टल",
+
+        navHome: "होम",
+        navAbout: "परियोजना के बारे में",
+        navSurvey: "ग्राम सर्वेक्षण",
+        navProblems: "समस्याएं",
+        navObjectives: "उद्देश्य",
+        navSchemes: "सरकारी योजनाएं",
+        navSolutions: "समाधान",
+        navFaq: "सामान्य प्रश्न",
+
+        welcome: "ग्राम सेवा में आपका स्वागत है",
+
+        heroTitle:
+            "सरकारी योजनाएं<br><span>गांवों के लिए आसान</span>",
+
+        heroText:
+            "सरकारी योजनाओं, स्वच्छता की जानकारी, ग्राम सर्वेक्षण के निष्कर्ष और स्वच्छ एवं स्वस्थ ग्रामीण समुदायों के लिए व्यावहारिक समाधान जानें।",
+
+        viewSchemes:
+            "🏛️ सरकारी योजनाएं देखें",
+
+        viewSurvey:
+            "📋 सर्वेक्षण देखें",
+
+        quickSchemeTitle:
+            "सरकारी योजनाएं",
+
+        quickSchemeText:
+            "स्वच्छता से संबंधित सरकारी पहलों के बारे में जानें।",
+
+        quickSurveyTitle:
+            "ग्राम सर्वेक्षण",
+
+        quickSurveyText:
+            "सर्वेक्षण के दौरान देखी गई स्वच्छता की स्थिति को समझें।",
+
+        quickLanguageTitle:
+            "3 भाषाएं",
+
+        quickLanguageText:
+            "अंग्रेजी, कन्नड़ और हिंदी।",
+
+        aboutLabel:
+            "परियोजना के बारे में",
+
+        aboutHeading:
+            "सीवेज प्रबंधन और ग्रामीण स्वच्छता",
+
+        aboutDescription:
+            "स्वच्छता की स्थिति को समझना और ग्रामीण समुदायों में जागरूकता पैदा करना।",
+
+        aboutText1:
+            "सीवेज प्रबंधन ग्रामीण स्वच्छता और सार्वजनिक स्वास्थ्य का एक महत्वपूर्ण हिस्सा है। इसमें अपशिष्ट जल और मानव अपशिष्ट का सुरक्षित संग्रह, उपचार और निपटान शामिल है।",
+
+        aboutText2:
+            "हमारी परियोजना ने पाटन गांव की स्वच्छता स्थिति, शौचालय के उपयोग और जल निकासी की स्थिति का अध्ययन किया, समस्याओं की पहचान की और ग्रामीणों में जागरूकता पैदा की।",
+
+        aboutText3:
+            "इस गतिविधि में सरकारी स्वच्छता पहलों, व्यावहारिक समाधानों और स्वच्छ एवं स्वस्थ गांव के लिए सामुदायिक भागीदारी को बढ़ावा देने पर भी ध्यान दिया गया।",
+
+        surveyLabel:
+            "क्षेत्र सर्वेक्षण",
+
+        surveyHeading:
+            "ग्राम सर्वेक्षण",
+
+        surveyDescription:
+            "गांव की यात्रा और ग्रामीणों के साथ बातचीत के दौरान हमने जो देखा।",
+
+        survey1Title:
+            "शौचालय की उपलब्धता",
+
+        survey1Text:
+            "गांव में शौचालय उपलब्ध थे, लेकिन कुछ लोग आदत और जागरूकता की कमी के कारण बाहर जाना पसंद करते थे।",
+
+        survey2Title:
+            "नाली की स्थिति",
+
+        survey2Text:
+            "कुछ क्षेत्रों में जल निकासी व्यवस्था का उचित रखरखाव नहीं किया जा रहा था।",
+
+        survey3Title:
+            "अपशिष्ट जल का संग्रह",
+
+        survey3Text:
+            "कुछ स्थानों पर अपशिष्ट जल जमा हो रहा था और अस्वच्छ परिस्थितियां पैदा कर रहा था।",
+
+        survey4Title:
+            "जागरूकता",
+
+        survey4Text:
+            "स्वच्छता, साफ-सफाई और सीवेज प्रबंधन के बारे में जागरूकता बढ़ाना आवश्यक था।",
+
+        problemLabel:
+            "पहचानी गई समस्याएं",
+
+        problemHeading:
+            "प्रमुख स्वच्छता समस्याएं",
+
+        problemDescription:
+            "ग्राम सर्वेक्षण के दौरान पहचानी गई समस्याएं।",
+
+        problem1:
+            "शौचालय उपलब्ध होने के बावजूद कुछ ग्रामीण खुले में शौच करते थे।",
+
+        problem2:
+            "नालियों के उचित रखरखाव की कमी के कारण अपशिष्ट जल जमा होता था।",
+
+        problem3:
+            "जमा हुआ अपशिष्ट जल अस्वच्छ परिस्थितियां पैदा करता था।",
+
+        problem4:
+            "स्वच्छता और साफ-सफाई के बारे में जागरूकता सीमित थी।",
+
+        problem5:
+            "अनुचित कचरा निपटान से आसपास के जल स्रोत प्रभावित हो सकते थे।",
+
+        problem6:
+            "स्वच्छता और नाली के रखरखाव में सामुदायिक भागीदारी बढ़ाने की आवश्यकता थी।",
+
+        objectiveLabel:
+            "परियोजना के उद्देश्य",
+
+        objectiveHeading:
+            "हम क्या हासिल करना चाहते थे",
+
+        objectiveDescription:
+            "सीवेज प्रबंधन जागरूकता परियोजना के मुख्य उद्देश्य।",
+
+        objective1:
+            "मौजूदा सीवेज प्रबंधन और स्वच्छता की स्थिति का अध्ययन करना।",
+
+        objective2:
+            "उचित सीवेज प्रबंधन और स्वच्छ वातावरण बनाए रखने के बारे में जागरूकता पैदा करना।",
+
+        objective3:
+            "खराब स्वच्छता और अनुचित अपशिष्ट जल प्रबंधन से जुड़े स्वास्थ्य जोखिमों के बारे में ग्रामीणों को शिक्षित करना।",
+
+        objective4:
+            "सरकारी स्वच्छता पहलों के बारे में जागरूकता फैलाना।",
+
+        objective5:
+            "नियमित शौचालय उपयोग और रखरखाव को प्रोत्साहित करना।",
+
+        objective6:
+            "नाली और सीवेज प्रबंधन में सुधार के लिए व्यावहारिक समाधान सुझाना।",
+
+        objective7:
+            "स्वच्छ, स्वस्थ और टिकाऊ ग्रामीण वातावरण बनाने में योगदान देना।",
+
+        questionLabel:
+            "सर्वेक्षण प्रश्न",
+
+        questionHeading:
+            "ग्रामीणों द्वारा पूछे गए प्रश्न",
+
+        questionDescription:
+            "जागरूकता गतिविधि के दौरान चर्चा किए गए महत्वपूर्ण प्रश्न।",
+
+        question1:
+            "शौचालय का उपयोग करना क्यों महत्वपूर्ण है?",
+
+        answer1:
+            "शौचालय का उपयोग स्वच्छता बनाए रखने, बीमारियों के प्रसार को रोकने, जल स्रोतों की रक्षा करने और गोपनीयता एवं सुरक्षा प्रदान करने में मदद करता है।",
+
+        question2:
+            "खुले में शौच करने से कौन सी बीमारियां फैल सकती हैं?",
+
+        answer2:
+            "खराब स्वच्छता और खुले में शौच से दस्त जैसी बीमारियों और अन्य संक्रमणों का जोखिम बढ़ सकता है।",
+
+        question3:
+            "खराब सीवेज प्रबंधन स्वास्थ्य को कैसे प्रभावित करता है?",
+
+        answer3:
+            "अनुचित अपशिष्ट जल निपटान अस्वच्छ परिस्थितियां पैदा करता है, मच्छरों के प्रजनन को बढ़ावा देता है और जल स्रोतों को दूषित कर सकता है।",
+
+        question4:
+            "नालियों के पास पानी क्यों जमा होता है?",
+
+        answer4:
+            "जब कचरे, मिट्टी या अन्य सामग्री के कारण नालियां बंद हो जाती हैं, तो पानी जमा हो सकता है।",
+
+        question5:
+            "नालियों को साफ रखने के लिए क्या किया जा सकता है?",
+
+        answer5:
+            "प्लास्टिक, भोजन का कचरा और अन्य कचरा नालियों में न डालें तथा नालियों की नियमित सफाई और रखरखाव करें।",
+
+        question6:
+            "उचित जल निकासी व्यवस्था के क्या लाभ हैं?",
+
+        answer6:
+            "उचित जल निकासी पानी के जमाव को रोकती है, मच्छरों के प्रजनन को कम करती है, स्वच्छता में सुधार करती है और सार्वजनिक स्वास्थ्य की रक्षा करती है।",
+
+        question7:
+            "क्या स्वच्छता के लिए सरकारी योजनाएं हैं?",
+
+        answer7:
+            "हां। स्वच्छ भारत मिशन ग्रामीण जैसी सरकारी पहलें स्वच्छता, शौचालय के उपयोग और गांव की सफाई को बढ़ावा देती हैं।",
+
+        question8:
+            "शौचालयों का सही रखरखाव कैसे करें?",
+
+        answer8:
+            "शौचालयों का नियमित उपयोग करें, उन्हें साफ रखें, आवश्यक पानी उपलब्ध रखें और उनका उचित रखरखाव करें।",
+
+        question9:
+            "घरेलू कचरे का क्या करना चाहिए?",
+
+        answer9:
+            "घरेलू कचरे का उचित प्रबंधन किया जाना चाहिए और इसे नालियों या जल स्रोतों में नहीं फेंकना चाहिए।",
+
+        question10:
+            "अपशिष्ट जल को जमा क्यों नहीं होने देना चाहिए?",
+
+        answer10:
+            "जमा हुआ अपशिष्ट जल अस्वच्छ वातावरण पैदा कर सकता है और पर्यावरण एवं स्वास्थ्य संबंधी जोखिम बढ़ा सकता है।",
+
+        solutionLabel:
+            "दिए गए समाधान",
+
+        solutionHeading:
+            "व्यावहारिक समाधान",
+
+        solutionDescription:
+            "सरल कदम जिन्हें ग्रामीण अपने दैनिक जीवन में अपना सकते हैं।",
+
+        solution1Title:
+            "नियमित शौचालय उपयोग",
+
+        solution1Text:
+            "सभी को नियमित रूप से शौचालय का उपयोग करने और खुले में शौच से बचने के लिए प्रोत्साहित करें।",
+
+        solution2Title:
+            "नालियों का रखरखाव",
+
+        solution2Text:
+            "नालियों को साफ रखें और अपशिष्ट जल को ठीक से बहने दें।",
+
+        solution3Title:
+            "उचित कचरा निपटान",
+
+        solution3Text:
+            "प्लास्टिक, भोजन का कचरा या अन्य कचरा नालियों में न डालें।",
+
+        solution4Title:
+            "सामुदायिक भागीदारी",
+
+        solution4Text:
+            "बच्चों, युवाओं और समुदाय के सदस्यों को स्वच्छता गतिविधियों में भाग लेने के लिए प्रोत्साहित करें।",
+
+        solution5Title:
+            "जागरूकता",
+
+        solution5Text:
+            "स्वच्छता और सीवेज प्रबंधन के महत्व को सरल भाषा में समझाएं।",
+
+        solution6Title:
+            "सरकारी सहायता का उपयोग",
+
+        solution6Text:
+            "संबंधित सरकारी स्वच्छता योजनाओं और उपलब्ध सहायता के बारे में ग्रामीणों को जानकारी दें।",
+
+        schemeLabel:
+            "सरकारी सहायता",
+
+        schemeHeading:
+            "सरकारी योजनाएं",
+
+        schemeDescription:
+            "स्वच्छता और अपशिष्ट जल से संबंधित महत्वपूर्ण सरकारी योजनाएं।",
+
+        scheme1Title:
+            "स्वच्छ भारत मिशन – ग्रामीण",
+
+        scheme1Text:
+            "ग्रामीण स्वच्छता, शौचालय उपयोग, ODF स्थिरता तथा ठोस एवं तरल कचरा प्रबंधन पर ध्यान केंद्रित करता है।",
+
+        scheme1Point1:
+            "ग्रामीण स्वच्छता",
+
+        scheme1Point2:
+            "शौचालय उपयोग",
+
+        scheme1Point3:
+            "ठोस और तरल कचरा प्रबंधन",
+
+        scheme1Button:
+            "📝 नागरिक पंजीकरण / आवेदन",
+
+        scheme1Info:
+            "आधिकारिक जानकारी →",
+
+        scheme2Title:
+            "स्वच्छ भारत मिशन – अर्बन 2.0",
+
+        scheme2Text:
+            "सतत स्वच्छता, अपशिष्ट जल उपचार, ठोस कचरा प्रबंधन और स्वच्छ शहरों पर ध्यान केंद्रित करता है।",
+
+        scheme2Point1:
+            "अपशिष्ट जल उपचार",
+
+        scheme2Point2:
+            "सतत स्वच्छता",
+
+        scheme2Point3:
+            "ठोस कचरा प्रबंधन",
+
+        scheme2Button:
+            "🌐 आधिकारिक पोर्टल",
+
+        scheme2Info:
+            "आधिकारिक जानकारी →",
+
+        scheme3Title:
+            "NAMASTE योजना",
+
+        scheme3Text:
+            "स्वच्छता कर्मचारियों की सुरक्षा और गरिमा को बढ़ावा देती है तथा सुरक्षित और यंत्रीकृत स्वच्छता कार्य का समर्थन करती है।",
+
+        scheme3Point1:
+            "स्वच्छता कर्मचारियों की सुरक्षा",
+
+        scheme3Point2:
+            "व्यावसायिक सुरक्षा प्रशिक्षण",
+
+        scheme3Point3:
+            "सुरक्षित स्वच्छता प्रथाएं",
+
+        scheme3Button:
+            "🌐 आधिकारिक जानकारी",
+
+        scheme3Info:
+            "योजना का विवरण →",
+
+        scheme4Title:
+            "नमामि गंगे कार्यक्रम",
+
+        scheme4Text:
+            "प्रदूषण में कमी, सीवेज उपचार, संरक्षण और गंगा नदी के पुनरुद्धार में सहायता करता है।",
+
+        scheme4Point1:
+            "सीवेज उपचार",
+
+        scheme4Point2:
+            "प्रदूषण में कमी",
+
+        scheme4Point3:
+            "जन जागरूकता",
+
+        scheme4Button:
+            "🌐 आधिकारिक जानकारी",
+
+        scheme4Info:
+            "योजना का विवरण →",
+
+        benefitLabel:
+            "लाभ",
+
+        benefitHeading:
+            "उचित सीवेज प्रबंधन के लाभ",
+
+        benefitDescription:
+            "उचित स्वच्छता ग्रामीण समुदायों और सरकारी प्रणालियों दोनों के लिए लाभकारी है।",
+
+        benefit1Title:
+            "बेहतर सार्वजनिक स्वास्थ्य",
+
+        benefit1Text:
+            "उचित स्वच्छता पर्यावरण और स्वच्छता से जुड़े स्वास्थ्य जोखिमों को कम करने में मदद करती है।",
+
+        benefit2Title:
+            "स्वच्छ पानी",
+
+        benefit2Text:
+            "उचित अपशिष्ट जल प्रबंधन जल स्रोतों को प्रदूषण से बचाने में मदद करता है।",
+
+        benefit3Title:
+            "स्वच्छ पर्यावरण",
+
+        benefit3Text:
+            "उचित कचरा और सीवेज प्रबंधन गांवों की स्वच्छता में सुधार करता है।",
+
+        benefit4Title:
+            "बेहतर सरकारी कार्यान्वयन",
+
+        benefit4Text:
+            "सामुदायिक भागीदारी से स्वच्छता कार्यक्रमों को बेहतर तरीके से लागू करने में मदद मिलती है।",
+
+        awarenessLabel:
+            "जागरूकता",
+
+        awarenessHeading:
+            "स्वच्छता और सीवेज प्रबंधन",
+
+        awarenessDescription:
+            "दैनिक आदतों में छोटे बदलाव एक स्वच्छ और स्वस्थ गांव बना सकते हैं।",
+
+        awareness1Title:
+            "शौचालय का उपयोग करें",
+
+        awareness1Text:
+            "हमेशा शौचालय का उपयोग करें और उसे साफ रखें।",
+
+        awareness2Title:
+            "पानी की रक्षा करें",
+
+        awareness2Text:
+            "सीवेज और कचरे को पीने के पानी के स्रोतों से दूर रखें।",
+
+        awareness3Title:
+            "कचरे का प्रबंधन करें",
+
+        awareness3Text:
+            "कचरे को अलग करें और उचित व्यवस्था के माध्यम से उसका निपटान करें।",
+
+        awareness4Title:
+            "गांव को स्वच्छ रखें",
+
+        awareness4Text:
+            "सड़कों, नालियों या जल स्रोतों में कचरा न फेंकें।",
+
+        societyLabel:
+            "सामाजिक प्रासंगिकता",
+
+        societyHeading:
+            "समाज के लिए प्रासंगिकता",
+
+        societyText1:
+            "उचित सीवेज प्रबंधन सार्वजनिक स्वास्थ्य, पर्यावरण संरक्षण और बेहतर जीवन स्तर में सीधे योगदान देता है।",
+
+        societyText2:
+            "ग्रामीणों में जागरूकता पैदा करने से स्वस्थ आदतों, नियमित शौचालय उपयोग, उचित कचरा निपटान और सामुदायिक भागीदारी को बढ़ावा मिल सकता है।",
+
+        societyText3:
+            "स्वच्छ गांव सतत ग्रामीण विकास में भी सहायता करता है और समुदायों को स्वच्छता सुविधाओं और सरकारी पहलों का बेहतर उपयोग करने में मदद करता है।",
+
+        conclusionLabel:
+            "निष्कर्ष",
+
+        conclusionHeading:
+            "स्वच्छ गांव की ओर",
+
+        conclusionText:
+            "सीवेज प्रबंधन केवल सरकार की जिम्मेदारी नहीं है। इसके लिए जागरूकता, उचित आदतें और सामुदायिक भागीदारी आवश्यक है। शौचालयों का उपयोग, नालियों का रखरखाव, उचित कचरा प्रबंधन और स्वच्छता पहलों का समर्थन करके ग्रामीण समुदाय एक स्वच्छ और स्वस्थ वातावरण बना सकते हैं।",
+
+        faqLabel:
+            "सहायता और जानकारी",
+
+        faqHeading:
+            "अक्सर पूछे जाने वाले प्रश्न",
+
+        faqQuestion1:
+            "सीवेज प्रबंधन क्या है?",
+
+        faqAnswer1:
+            "सीवेज प्रबंधन का अर्थ अपशिष्ट जल का उचित संग्रह, उपचार और सुरक्षित निपटान है।",
+
+        faqQuestion2:
+            "स्वच्छता क्यों महत्वपूर्ण है?",
+
+        faqAnswer2:
+            "अच्छी स्वच्छता साफ-सफाई बनाए रखने, जल स्रोतों की रक्षा करने और स्वस्थ समुदाय बनाने में मदद करती है।",
+
+        faqQuestion3:
+            "घरेलू कचरे का प्रबंधन कैसे करना चाहिए?",
+
+        faqAnswer3:
+            "कचरे का उचित प्रबंधन किया जाना चाहिए और इसे नालियों, सड़कों या जल स्रोतों में नहीं फेंकना चाहिए।",
+
+        faqQuestion4:
+            "ग्रामीण अपने गांव को स्वच्छ रखने में कैसे मदद कर सकते हैं?",
+
+        faqAnswer4:
+            "ग्रामीण शौचालयों का उपयोग करके, कचरा फैलाने से बचकर, नालियों का रखरखाव करके और सामुदायिक स्वच्छता गतिविधियों में भाग लेकर मदद कर सकते हैं।",
+
+        faqQuestion5:
+            "सरकारी स्वच्छता की जानकारी कहां मिल सकती है?",
+
+        faqAnswer5:
+            "ग्राम सेवा के सरकारी योजनाओं वाले भाग पर जाएं। योजना के बटन आधिकारिक सरकारी सूचना पोर्टलों से जुड़े हैं।",
+
+        footerText:
+            "जागरूकता और आसानी से उपलब्ध जानकारी के माध्यम से ग्रामीण समुदायों को सशक्त बनाना।",
+
+        copyright:
+            "© 2026 ग्राम सेवा | ग्रामीण स्वच्छता और सरकारी योजनाओं का पोर्टल"
+    }
+
+};
+
+
+/* =========================================================
+   CHANGE LANGUAGE
+========================================================= */
+
+function changeLanguage(language) {
+
+    const t = translations[language];
+
+    if (!t) {
+        return;
+    }
+
+    document.documentElement.lang = language;
+
+
+    /* Navigation */
+
+    document.getElementById("logoSubtitle").textContent = t.logoSubtitle;
+
+    document.getElementById("navHome").textContent = t.navHome;
+    document.getElementById("navAbout").textContent = t.navAbout;
+    document.getElementById("navSurvey").textContent = t.navSurvey;
+    document.getElementById("navProblems").textContent = t.navProblems;
+    document.getElementById("navObjectives").textContent = t.navObjectives;
+    document.getElementById("navSchemes").textContent = t.navSchemes;
+    document.getElementById("navSolutions").textContent = t.navSolutions;
+    document.getElementById("navFaq").textContent = t.navFaq;
+
+
+    /* Hero */
+
+    document.getElementById("welcome").textContent = t.welcome;
+
+    document.getElementById("heroTitle").innerHTML = t.heroTitle;
+
+    document.getElementById("heroText").textContent = t.heroText;
+
+    document.getElementById("viewSchemes").textContent = t.viewSchemes;
+
+    document.getElementById("viewSurvey").textContent = t.viewSurvey;
+
+
+    /* Quick cards */
+
+    document.getElementById("quickSchemeTitle").textContent =
+        t.quickSchemeTitle;
+
+    document.getElementById("quickSchemeText").textContent =
+        t.quickSchemeText;
+
+    document.getElementById("quickSurveyTitle").textContent =
+        t.quickSurveyTitle;
+
+    document.getElementById("quickSurveyText").textContent =
+        t.quickSurveyText;
+
+    document.getElementById("quickLanguageTitle").textContent =
+        t.quickLanguageTitle;
+
+    document.getElementById("quickLanguageText").textContent =
+        t.quickLanguageText;
+
+
+    /* About */
+
+    document.getElementById("aboutLabel").textContent =
+        t.aboutLabel;
+
+    document.getElementById("aboutHeading").textContent =
+        t.aboutHeading;
+
+    document.getElementById("aboutDescription").textContent =
+        t.aboutDescription;
+
+    document.getElementById("aboutText1").textContent =
+        t.aboutText1;
+
+    document.getElementById("aboutText2").textContent =
+        t.aboutText2;
+
+    document.getElementById("aboutText3").textContent =
+        t.aboutText3;
+
+
+    /* Survey */
+
+    document.getElementById("surveyLabel").textContent =
+        t.surveyLabel;
+
+    document.getElementById("surveyHeading").textContent =
+        t.surveyHeading;
+
+    document.getElementById("surveyDescription").textContent =
+        t.surveyDescription;
+
+    for (let i = 1; i <= 4; i++) {
+
+        document.getElementById("survey" + i + "Title").textContent =
+            t["survey" + i + "Title"];
+
+        document.getElementById("survey" + i + "Text").textContent =
+            t["survey" + i + "Text"];
+    }
+
+
+    /* Problems */
+
+    document.getElementById("problemLabel").textContent =
+        t.problemLabel;
+
+    document.getElementById("problemHeading").textContent =
+        t.problemHeading;
+
+    document.getElementById("problemDescription").textContent =
+        t.problemDescription;
+
+    for (let i = 1; i <= 6; i++) {
+
+        document.getElementById("problem" + i).textContent =
+            t["problem" + i];
+    }
+
+
+    /* Objectives */
+
+    document.getElementById("objectiveLabel").textContent =
+        t.objectiveLabel;
+
+    document.getElementById("objectiveHeading").textContent =
+        t.objectiveHeading;
+
+    document.getElementById("objectiveDescription").textContent =
+        t.objectiveDescription;
+
+    for (let i = 1; i <= 7; i++) {
+
+        document.getElementById("objective" + i).textContent =
+            t["objective" + i];
+    }
+
+
+    /* Questions */
+
+    document.getElementById("questionLabel").textContent =
+        t.questionLabel;
+
+    document.getElementById("questionHeading").textContent =
+        t.questionHeading;
+
+    document.getElementById("questionDescription").textContent =
+        t.questionDescription;
+
+    for (let i = 1; i <= 10; i++) {
+
+        document.getElementById("question" + i).textContent =
+            t["question" + i];
+
+        document.getElementById("answer" + i).textContent =
+            t["answer" + i];
+    }
+
+
+    /* Solutions */
+
+    document.getElementById("solutionLabel").textContent =
+        t.solutionLabel;
+
+    document.getElementById("solutionHeading").textContent =
+        t.solutionHeading;
+
+    document.getElementById("solutionDescription").textContent =
+        t.solutionDescription;
+
+    for (let i = 1; i <= 6; i++) {
+
+        document.getElementById("solution" + i + "Title").textContent =
+            t["solution" + i + "Title"];
+
+        document.getElementById("solution" + i + "Text").textContent =
+            t["solution" + i + "Text"];
+    }
+
+
+    /* Schemes */
+
+    document.getElementById("schemeLabel").textContent =
+        t.schemeLabel;
+
+    document.getElementById("schemeHeading").textContent =
+        t.schemeHeading;
+
+    document.getElementById("schemeDescription").textContent =
+        t.schemeDescription;
+
+
+    for (let i = 1; i <= 4; i++) {
+
+        document.getElementById("scheme" + i + "Title").textContent =
+            t["scheme" + i + "Title"];
+
+        document.getElementById("scheme" + i + "Text").textContent =
+            t["scheme" + i + "Text"];
+
+        for (let j = 1; j <= 3; j++) {
+
+            document.getElementById(
+                "scheme" + i + "Point" + j
+            ).textContent =
+                t["scheme" + i + "Point" + j];
+        }
+
+        document.getElementById(
+            "scheme" + i + "Button"
+        ).textContent =
+            t["scheme" + i + "Button"];
+
+        document.getElementById(
+            "scheme" + i + "Info"
+        ).textContent =
+            t["scheme" + i + "Info"];
+    }
+
+
+    /* Benefits */
+
+    document.getElementById("benefitLabel").textContent =
+        t.benefitLabel;
+
+    document.getElementById("benefitHeading").textContent =
+        t.benefitHeading;
+
+    document.getElementById("benefitDescription").textContent =
+        t.benefitDescription;
+
+    for (let i = 1; i <= 4; i++) {
+
+        document.getElementById(
+            "benefit" + i + "Title"
+        ).textContent =
+            t["benefit" + i + "Title"];
+
+        document.getElementById(
+            "benefit" + i + "Text"
+        ).textContent =
+            t["benefit" + i + "Text"];
+    }
+
+
+    /* Awareness */
+
+    document.getElementById("awarenessLabel").textContent =
+        t.awarenessLabel;
+
+    document.getElementById("awarenessHeading").textContent =
+        t.awarenessHeading;
+
+    document.getElementById("awarenessDescription").textContent =
+        t.awarenessDescription;
+
+    for (let i = 1; i <= 4; i++) {
+
+        document.getElementById(
+            "awareness" + i + "Title"
+        ).textContent =
+            t["awareness" + i + "Title"];
+
+        document.getElementById(
+            "awareness" + i + "Text"
+        ).textContent =
+            t["awareness" + i + "Text"];
+    }
+
+
+    /* Society */
+
+    document.getElementById("societyLabel").textContent =
+        t.societyLabel;
+
+    document.getElementById("societyHeading").textContent =
+        t.societyHeading;
+
+    document.getElementById("societyText1").textContent =
+        t.societyText1;
+
+    document.getElementById("societyText2").textContent =
+        t.societyText2;
+
+    document.getElementById("societyText3").textContent =
+        t.societyText3;
+
+
+    /* Conclusion */
+
+    document.getElementById("conclusionLabel").textContent =
+        t.conclusionLabel;
+
+    document.getElementById("conclusionHeading").textContent =
+        t.conclusionHeading;
+
+    document.getElementById("conclusionText").textContent =
+        t.conclusionText;
+
+
+    /* FAQ */
+
+    document.getElementById("faqLabel").textContent =
+        t.faqLabel;
+
+    document.getElementById("faqHeading").textContent =
+        t.faqHeading;
+
+    for (let i = 1; i <= 5; i++) {
+
+        document.getElementById(
+            "faqQuestion" + i
+        ).textContent =
+            t["faqQuestion" + i];
+
+        document.getElementById(
+            "faqAnswer" + i
+        ).textContent =
+            t["faqAnswer" + i];
+    }
+
+
+    /* Footer */
+
+    document.getElementById("footerText").textContent =
+        t.footerText;
+
+    document.getElementById("copyright").textContent =
+        t.copyright;
+
+}
+
+
+/* =========================================================
+   LANGUAGE DROPDOWN
+========================================================= */
+
+document.getElementById("language").addEventListener(
+    "change",
+    function () {
+
+        changeLanguage(this.value);
+
+    }
+);
+
+
+/* =========================================================
+   DEFAULT LANGUAGE
+========================================================= */
+
+changeLanguage("en");
+
+</script>
+
+</body>
+</html>
