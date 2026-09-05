@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Government Schemes | Grama Seva</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        🌱 Grama Seva
+        <small id="logoSubtitle">Rural Sanitation & Government Schemes</small>
+    </div>
+
+    <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="#schemes">Schemes</a>
+        <a href="#how">How It Works</a>
+
+        <select id="language" class="language-select">
+            <option value="en">English</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </nav>
+
+</header>
+<div class="scheme-search">
+    <h2>🔎 Find a Government Scheme</h2>
+
+    <input
+        type="text"
+        id="schemeSearch"
+        placeholder="Search for toilet, sanitation, waste, sewage..."
+        onkeyup="searchSchemes()"
+    >
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="welcome" id="welcome">
+            Government Scheme Information
+        </div>
+
+        <h1 id="heroTitle">
+            Government Schemes<br>
+            <span>for Rural Communities</span>
+        </h1>
+
+        <p id="heroText">
+            Understand important sanitation and environmental schemes
+            and find the official government website for further action.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#schemes"
+               class="primary-btn"
+               id="viewSchemes">
+                Explore Schemes
+            </a>
+
+            <a href="/"
+               class="secondary-btn"
+               id="backHome">
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SCHEMES
+===================================================== -->
+
+<section class="section" id="schemes">
+
+    <div class="section-heading">
+
+        <div class="section-label" id="schemeLabel">
+            Government Support
+        </div>
+
+        <h2 id="schemeHeading">
+            Important Government Schemes
+        </h2>
+
+        <p id="schemeDescription">
+            These schemes are relevant to sanitation, cleanliness,
+            sewage management and the safety of sanitation workers.
+        </p>
+
+    </div>
+
+
+    <div class="scheme-grid">
+
+
+        <!-- SBM GRAMEEN -->
+
+        <div class="scheme-card">
+
+            <div class="scheme-icon">
+                🚽
+            </div>
+
+            <h3 id="scheme1Title">
+                Swachh Bharat Mission – Grameen
+            </h3>
+
+            <p id="scheme1Text">
+                Supports sanitation and cleanliness in rural areas,
+                including toilet usage and solid and liquid waste
+                management.
+            </p>
+
+            <ul>
+                <li id="scheme1Point1">
+                    Rural sanitation
+                </li>
+
+                <li id="scheme1Point2">
+                    Solid and liquid waste management
+                </li>
+
+                <li id="scheme1Point3">
+                    Sustaining ODF villages
+                </li>
+            </ul>
+
+            <a href="https://swachhbharatmission.ddws.gov.in/"
+               target="_blank"
+               class="scheme-button"
+               id="scheme1Button">
+                Visit Official Website
+            </a>
+
+            <br><br>
+
+            <a href="https://sbm.gov.in/SBM_DBT/Secure/DBT/DBT_Registration.aspx"
+               target="_blank"
+               class="scheme-link"
+               id="scheme1Info">
+                Registration / Application Portal
+            </a>
+
+        </div>
+
+
+        <!-- SBM URBAN -->
+
+        <div class="scheme-card">
+
+            <div class="scheme-icon">
+                🏙️
+            </div>
+
+            <h3 id="scheme2Title">
+                Swachh Bharat Mission – Urban
+            </h3>
+
+            <p id="scheme2Text">
+                Focuses on cleanliness, sanitation and waste management
+                in urban areas.
+            </p>
+
+            <ul>
+                <li id="scheme2Point1">
+                    Cleanliness
+                </li>
+
+                <li id="scheme2Point2">
+                    Waste management
+                </li>
+
+                <li id="scheme2Point3">
+                    Sanitation awareness
+                </li>
+            </ul>
+
+            <a href="https://mohua.gov.in/"
+               target="_blank"
+               class="scheme-button"
+               id="scheme2Button">
+                Visit Official Website
+            </a>
+
+            <br><br>
+
+            <a href="https://mohua.gov.in/"
+               target="_blank"
+               class="scheme-link"
+               id="scheme2Info">
+                Get More Information
+            </a>
+
+        </div>
+
+
+        <!-- NAMASTE -->
+
+        <div class="scheme-card">
+
+            <div class="scheme-icon">
+                🦺
+            </div>
+
+            <h3 id="scheme3Title">
+                NAMASTE Scheme
+            </h3>
+
+            <p id="scheme3Text">
+                Aims to improve the safety, dignity and well-being
+                of sanitation workers through safer and mechanized
+                sanitation practices.
+            </p>
+
+            <ul>
+                <li id="scheme3Point1">
+                    Safety of sanitation workers
+                </li>
+
+                <li id="scheme3Point2">
+                    Mechanized sanitation
+                </li>
+
+                <li id="scheme3Point3">
+                    Better working conditions
+                </li>
+            </ul>
+
+            <a href="https://socialjustice.gov.in/"
+               target="_blank"
+               class="scheme-button"
+               id="scheme3Button">
+                Visit Official Website
+            </a>
+
+            <br><br>
+
+            <a href="https://socialjustice.gov.in/public/ckeditor/upload/57341728039410.pdf"
+               target="_blank"
+               class="scheme-link"
+               id="scheme3Info">
+                Scheme Information
+            </a>
+
+        </div>
+
+
+        <!-- NAMAMI GANGE -->
+
+        <div class="scheme-card">
+
+            <div class="scheme-icon">
+                🌊
+            </div>
+
+            <h3 id="scheme4Title">
+                Namami Gange Programme
+            </h3>
+
+            <p id="scheme4Text">
+                Supports river conservation and pollution reduction,
+                including sewage treatment and public awareness.
+            </p>
+
+            <ul>
+                <li id="scheme4Point1">
+                    Sewage treatment
+                </li>
+
+                <li id="scheme4Point2">
+                    Pollution reduction
+                </li>
+
+                <li id="scheme4Point3">
+                    Environmental awareness
+                </li>
+            </ul>
+
+            <a href="https://nmcg.nic.in/NamamiGanga.aspx"
+               target="_blank"
+               class="scheme-button"
+               id="scheme4Button">
+                Visit Official Website
+            </a>
+
+            <br><br>
+
+            <a href="https://nmcg.nic.in/NamamiGanga.aspx"
+               target="_blank"
+               class="scheme-link"
+               id="scheme4Info">
+                Learn More
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HOW IT WORKS
+===================================================== -->
+
+<section class="section sanitation-section" id="how">
+
+    <div class="section-heading">
+
+        <div class="section-label" id="howLabel">
+            Simple Process
+        </div>
+
+        <h2 id="howHeading">
+            How to Use Grama Seva
+        </h2>
+
+        <p id="howDescription">
+            Follow these simple steps to find information about
+            government schemes.
+        </p>
+
+    </div>
+
+
+    <div class="info-container">
+
+        <div class="info-card">
+
+            <div class="info-icon">🔎</div>
+
+            <h3 id="how1Title">
+                1. Select a Scheme
+            </h3>
+
+            <p id="how1Text">
+                Choose the scheme that is relevant to your requirement.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">📖</div>
+
+            <h3 id="how2Title">
+                2. Read the Information
+            </h3>
+
+            <p id="how2Text">
+                Understand the purpose and benefits of the scheme.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🌐</div>
+
+            <h3 id="how3Title">
+                3. Open Official Website
+            </h3>
+
+            <p id="how3Text">
+                Use the official government link provided on this website.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">✅</div>
+
+            <h3 id="how4Title">
+                4. Take Further Action
+            </h3>
+
+            <p id="how4Text">
+                Follow the instructions on the official government portal.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     IMPORTANT NOTICE
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <div class="section-label" id="noticeLabel">
+            Important
+        </div>
+
+        <h2 id="noticeHeading">
+            Use Official Government Portals
+        </h2>
+
+        <p id="noticeText">
+            Grama Seva provides information and guidance.
+            Government applications should be completed only through
+            the relevant official government website.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <p id="footerText">
+            Grama Seva – Supporting rural sanitation awareness
+            and access to government scheme information.
+        </p>
+
+        <div class="footer-languages">
+            <span>English</span>
+            <span>ಕನ್ನಡ</span>
+            <span>हिन्दी</span>
+        </div>
+
+    </div>
+
+    <div class="copyright" id="copyright">
+        © 2026 Grama Seva | Rural Sanitation Awareness Project
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     LANGUAGE SCRIPT
+===================================================== -->
+
+<script>
+
+const translations = {
+
+    en: {
+
+        logoSubtitle: "Rural Sanitation & Government Schemes",
+
+        welcome: "Government Scheme Information",
+
+        heroTitle: "Government Schemes<br><span>for Rural Communities</span>",
+
+        heroText:
+        "Understand important sanitation and environmental schemes and find the official government website for further action.",
+
+        viewSchemes: "Explore Schemes",
+
+        backHome: "Back to Home",
+
+        schemeLabel: "Government Support",
+
+        schemeHeading: "Important Government Schemes",
+
+        schemeDescription:
+        "These schemes are relevant to sanitation, cleanliness, sewage management and the safety of sanitation workers.",
+
+        scheme1Title: "Swachh Bharat Mission – Grameen",
+
+        scheme1Text:
+        "Supports sanitation and cleanliness in rural areas, including toilet usage and solid and liquid waste management.",
+
+        scheme1Point1: "Rural sanitation",
+        scheme1Point2: "Solid and liquid waste management",
+        scheme1Point3: "Sustaining ODF villages",
+
+        scheme1Button: "Visit Official Website",
+        scheme1Info: "Registration / Application Portal",
+
+        scheme2Title: "Swachh Bharat Mission – Urban",
+
+        scheme2Text:
+        "Focuses on cleanliness, sanitation and waste management in urban areas.",
+
+        scheme2Point1: "Cleanliness",
+        scheme2Point2: "Waste management",
+        scheme2Point3: "Sanitation awareness",
+
+        scheme2Button: "Visit Official Website",
+        scheme2Info: "Get More Information",
+
+        scheme3Title: "NAMASTE Scheme",
+
+        scheme3Text:
+        "Aims to improve the safety, dignity and well-being of sanitation workers through safer and mechanized sanitation practices.",
+
+        scheme3Point1: "Safety of sanitation workers",
+        scheme3Point2: "Mechanized sanitation",
+        scheme3Point3: "Better working conditions",
+
+        scheme3Button: "Visit Official Website",
+        scheme3Info: "Scheme Information",
+
+        scheme4Title: "Namami Gange Programme",
+
+        scheme4Text:
+        "Supports river conservation and pollution reduction, including sewage treatment and public awareness.",
+
+        scheme4Point1: "Sewage treatment",
+        scheme4Point2: "Pollution reduction",
+        scheme4Point3: "Environmental awareness",
+
+        scheme4Button: "Visit Official Website",
+        scheme4Info: "Learn More",
+
+        howLabel: "Simple Process",
+
+        howHeading: "How to Use Grama Seva",
+
+        howDescription:
+        "Follow these simple steps to find information about government schemes.",
+
+        how1Title: "1. Select a Scheme",
+        how1Text:
+        "Choose the scheme that is relevant to your requirement.",
+
+        how2Title: "2. Read the Information",
+        how2Text:
+        "Understand the purpose and benefits of the scheme.",
+
+        how3Title: "3. Open Official Website",
+        how3Text:
+        "Use the official government link provided on this website.",
+
+        how4Title: "4. Take Further Action",
+        how4Text:
+        "Follow the instructions on the official government portal.",
+
+        noticeLabel: "Important",
+
+        noticeHeading: "Use Official Government Portals",
+
+        noticeText:
+        "Grama Seva provides information and guidance. Government applications should be completed only through the relevant official government website.",
+
+        footerText:
+        "Grama Seva – Supporting rural sanitation awareness and access to government scheme information.",
+
+        copyright:
+        "© 2026 Grama Seva | Rural Sanitation Awareness Project"
+    },
+
+
+    kn: {
+
+        logoSubtitle: "ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ ಮತ್ತು ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು",
+
+        welcome: "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳ ಮಾಹಿತಿ",
+
+        heroTitle: "ಗ್ರಾಮೀಣ ಸಮುದಾಯಗಳಿಗಾಗಿ<br><span>ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು</span>",
+
+        heroText:
+        "ಪ್ರಮುಖ ನೈರ್ಮಲ್ಯ ಮತ್ತು ಪರಿಸರ ಯೋಜನೆಗಳ ಬಗ್ಗೆ ತಿಳಿದುಕೊಳ್ಳಿ ಮತ್ತು ಮುಂದಿನ ಕ್ರಮಕ್ಕಾಗಿ ಅಧಿಕೃತ ಸರ್ಕಾರಿ ವೆಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಬಳಸಿ.",
+
+        viewSchemes: "ಯೋಜನೆಗಳನ್ನು ನೋಡಿ",
+
+        backHome: "ಮುಖಪುಟಕ್ಕೆ",
+
+        schemeLabel: "ಸರ್ಕಾರಿ ಸಹಾಯ",
+
+        schemeHeading: "ಪ್ರಮುಖ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು",
+
+        schemeDescription:
+        "ಈ ಯೋಜನೆಗಳು ನೈರ್ಮಲ್ಯ, ಸ್ವಚ್ಛತೆ, ಒಳಚರಂಡಿ ನಿರ್ವಹಣೆ ಮತ್ತು ನೈರ್ಮಲ್ಯ ಕಾರ್ಮಿಕರ ಸುರಕ್ಷತೆಗೆ ಸಂಬಂಧಿಸಿವೆ.",
+
+        scheme1Title: "ಸ್ವಚ್ಛ ಭಾರತ ಮಿಷನ್ – ಗ್ರಾಮೀಣ",
+
+        scheme1Text:
+        "ಗ್ರಾಮೀಣ ಪ್ರದೇಶಗಳಲ್ಲಿ ನೈರ್ಮಲ್ಯ ಮತ್ತು ಸ್ವಚ್ಛತೆಯನ್ನು ಉತ್ತೇಜಿಸುವ ಯೋಜನೆ.",
+
+        scheme1Point1: "ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ",
+        scheme1Point2: "ಘನ ಮತ್ತು ದ್ರವ ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆ",
+        scheme1Point3: "ODF ಗ್ರಾಮಗಳ ನಿರ್ವಹಣೆ",
+
+        scheme1Button: "ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್",
+        scheme1Info: "ನೋಂದಣಿ / ಅರ್ಜಿ ಪೋರ್ಟಲ್",
+
+        scheme2Title: "ಸ್ವಚ್ಛ ಭಾರತ ಮಿಷನ್ – ನಗರ",
+
+        scheme2Text:
+        "ನಗರ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸ್ವಚ್ಛತೆ, ನೈರ್ಮಲ್ಯ ಮತ್ತು ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆಯ ಮೇಲೆ ಗಮನಹರಿಸುತ್ತದೆ.",
+
+        scheme2Point1: "ಸ್ವಚ್ಛತೆ",
+        scheme2Point2: "ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆ",
+        scheme2Point3: "ನೈರ್ಮಲ್ಯ ಜಾಗೃತಿ",
+
+        scheme2Button: "ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್",
+        scheme2Info: "ಹೆಚ್ಚಿನ ಮಾಹಿತಿ",
+
+        scheme3Title: "NAMASTE ಯೋಜನೆ",
+
+        scheme3Text:
+        "ನೈರ್ಮಲ್ಯ ಕಾರ್ಮಿಕರ ಸುರಕ್ಷತೆ, ಗೌರವ ಮತ್ತು ಕಲ್ಯಾಣವನ್ನು ಸುಧಾರಿಸುವ ಉದ್ದೇಶ ಹೊಂದಿದೆ.",
+
+        scheme3Point1: "ನೈರ್ಮಲ್ಯ ಕಾರ್ಮಿಕರ ಸುರಕ್ಷತೆ",
+        scheme3Point2: "ಯಾಂತ್ರೀಕೃತ ನೈರ್ಮಲ್ಯ",
+        scheme3Point3: "ಉತ್ತಮ ಕೆಲಸದ ಪರಿಸ್ಥಿತಿಗಳು",
+
+        scheme3Button: "ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್",
+        scheme3Info: "ಯೋಜನೆಯ ಮಾಹಿತಿ",
+
+        scheme4Title: "ನಮಾಮಿ ಗಂಗೆ ಕಾರ್ಯಕ್ರಮ",
+
+        scheme4Text:
+        "ನದಿ ಸಂರಕ್ಷಣೆ ಮತ್ತು ಮಾಲಿನ್ಯ ಕಡಿತಕ್ಕೆ, ಒಳಚರಂಡಿ ಸಂಸ್ಕರಣೆ ಸೇರಿದಂತೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+        scheme4Point1: "ಒಳಚರಂಡಿ ಸಂಸ್ಕರಣೆ",
+        scheme4Point2: "ಮಾಲಿನ್ಯ ಕಡಿತ",
+        scheme4Point3: "ಪರಿಸರ ಜಾಗೃತಿ",
+
+        scheme4Button: "ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್",
+        scheme4Info: "ಹೆಚ್ಚಿನ ಮಾಹಿತಿ",
+
+        howLabel: "ಸರಳ ಪ್ರಕ್ರಿಯೆ",
+
+        howHeading: "ಗ್ರಾಮ ಸೇವೆಯನ್ನು ಹೇಗೆ ಬಳಸುವುದು",
+
+        howDescription:
+        "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಲು ಈ ಸರಳ ಹಂತಗಳನ್ನು ಅನುಸರಿಸಿ.",
+
+        how1Title: "1. ಯೋಜನೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        how1Text: "ನಿಮಗೆ ಅಗತ್ಯವಿರುವ ಯೋಜನೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+
+        how2Title: "2. ಮಾಹಿತಿಯನ್ನು ಓದಿ",
+        how2Text: "ಯೋಜನೆಯ ಉದ್ದೇಶ ಮತ್ತು ಪ್ರಯೋಜನಗಳನ್ನು ತಿಳಿದುಕೊಳ್ಳಿ.",
+
+        how3Title: "3. ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್ ತೆರೆಯಿರಿ",
+        how3Text: "ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ನೀಡಿರುವ ಅಧಿಕೃತ ಸರ್ಕಾರಿ ಲಿಂಕ್ ಬಳಸಿ.",
+
+        how4Title: "4. ಮುಂದಿನ ಕ್ರಮ ಕೈಗೊಳ್ಳಿ",
+        how4Text: "ಅಧಿಕೃತ ಸರ್ಕಾರಿ ಪೋರ್ಟಲ್‌ನ ಸೂಚನೆಗಳನ್ನು ಅನುಸರಿಸಿ.",
+
+        noticeLabel: "ಮುಖ್ಯ ಸೂಚನೆ",
+
+        noticeHeading: "ಅಧಿಕೃತ ಸರ್ಕಾರಿ ಪೋರ್ಟಲ್ ಬಳಸಿ",
+
+        noticeText:
+        "ಗ್ರಾಮ ಸೇವೆ ಮಾಹಿತಿ ಮತ್ತು ಮಾರ್ಗದರ್ಶನವನ್ನು ಒದಗಿಸುತ್ತದೆ. ಸರ್ಕಾರಿ ಅರ್ಜಿಗಳನ್ನು ಸಂಬಂಧಿತ ಅಧಿಕೃತ ಸರ್ಕಾರಿ ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ಮಾತ್ರ ಸಲ್ಲಿಸಬೇಕು.",
+
+        footerText:
+        "ಗ್ರಾಮ ಸೇವೆ – ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ ಜಾಗೃತಿ ಮತ್ತು ಸರ್ಕಾರಿ ಯೋಜನೆಗಳ ಮಾಹಿತಿಗೆ ಸಹಾಯ.",
+
+        copyright:
+        "© 2026 ಗ್ರಾಮ ಸೇವೆ | ಗ್ರಾಮೀಣ ನೈರ್ಮಲ್ಯ ಜಾಗೃತಿ ಯೋಜನೆ"
+    },
+
+
+    hi: {
+
+        logoSubtitle: "ग्रामीण स्वच्छता और सरकारी योजनाएं",
+
+        welcome: "सरकारी योजना की जानकारी",
+
+        heroTitle: "ग्रामीण समुदायों के लिए<br><span>सरकारी योजनाएं</span>",
+
+        heroText:
+        "महत्वपूर्ण स्वच्छता और पर्यावरण योजनाओं को समझें और आगे की कार्रवाई के लिए आधिकारिक सरकारी वेबसाइट का उपयोग करें।",
+
+        viewSchemes: "योजनाएं देखें",
+
+        backHome: "होम पर जाएं",
+
+        schemeLabel: "सरकारी सहायता",
+
+        schemeHeading: "महत्वपूर्ण सरकारी योजनाएं",
+
+        schemeDescription:
+        "ये योजनाएं स्वच्छता, साफ-सफाई, सीवेज प्रबंधन और सफाई कर्मचारियों की सुरक्षा से संबंधित हैं।",
+
+        scheme1Title: "स्वच्छ भारत मिशन – ग्रामीण",
+
+        scheme1Text:
+        "ग्रामीण क्षेत्रों में स्वच्छता और साफ-सफाई को बढ़ावा देने वाली योजना।",
+
+        scheme1Point1: "ग्रामीण स्वच्छता",
+        scheme1Point2: "ठोस और तरल कचरा प्रबंधन",
+        scheme1Point3: "ODF गांवों को बनाए रखना",
+
+        scheme1Button: "आधिकारिक वेबसाइट",
+        scheme1Info: "पंजीकरण / आवेदन पोर्टल",
+
+        scheme2Title: "स्वच्छ भारत मिशन – शहरी",
+
+        scheme2Text:
+        "शहरी क्षेत्रों में स्वच्छता और कचरा प्रबंधन पर ध्यान देता है।",
+
+        scheme2Point1: "स्वच्छता",
+        scheme2Point2: "कचरा प्रबंधन",
+        scheme2Point3: "स्वच्छता जागरूकता",
+
+        scheme2Button: "आधिकारिक वेबसाइट",
+        scheme2Info: "अधिक जानकारी",
+
+        scheme3Title: "NAMASTE योजना",
+
+        scheme3Text:
+        "सफाई कर्मचारियों की सुरक्षा, सम्मान और कल्याण को बेहतर बनाने का उद्देश्य रखती है।",
+
+        scheme3Point1: "सफाई कर्मचारियों की सुरक्षा",
+        scheme3Point2: "मशीनीकृत स्वच्छता",
+        scheme3Point3: "बेहतर कार्य परिस्थितियां",
+
+        scheme3Button: "आधिकारिक वेबसाइट",
+        scheme3Info: "योजना की जानकारी",
+
+        scheme4Title: "नमामि गंगे कार्यक्रम",
+
+        scheme4Text:
+        "नदी संरक्षण और प्रदूषण कम करने में सहायता करता है, जिसमें सीवेज उपचार भी शामिल है।",
+
+        scheme4Point1: "सीवेज उपचार",
+        scheme4Point2: "प्रदूषण में कमी",
+        scheme4Point3: "पर्यावरण जागरूकता",
+
+        scheme4Button: "आधिकारिक वेबसाइट",
+        scheme4Info: "अधिक जानकारी",
+
+        howLabel: "सरल प्रक्रिया",
+
+        howHeading: "ग्राम सेवा का उपयोग कैसे करें",
+
+        howDescription:
+        "सरकारी योजनाओं की जानकारी प्राप्त करने के लिए इन सरल चरणों का पालन करें।",
+
+        how1Title: "1. योजना चुनें",
+        how1Text: "अपनी आवश्यकता के अनुसार योजना चुनें।",
+
+        how2Title: "2. जानकारी पढ़ें",
+        how2Text: "योजना का उद्देश्य और लाभ समझें।",
+
+        how3Title: "3. आधिकारिक वेबसाइट खोलें",
+        how3Text: "इस वेबसाइट पर दिए गए आधिकारिक सरकारी लिंक का उपयोग करें।",
+
+        how4Title: "4. आगे की कार्रवाई करें",
+        how4Text: "आधिकारिक सरकारी पोर्टल के निर्देशों का पालन करें।",
+
+        noticeLabel: "महत्वपूर्ण",
+
+        noticeHeading: "आधिकारिक सरकारी पोर्टल का उपयोग करें",
+
+        noticeText:
+        "ग्राम सेवा जानकारी और मार्गदर्शन प्रदान करता है। सरकारी आवेदन केवल संबंधित आधिकारिक सरकारी वेबसाइट के माध्यम से किए जाने चाहिए।",
+
+        footerText:
+        "ग्राम सेवा – ग्रामीण स्वच्छता जागरूकता और सरकारी योजनाओं की जानकारी में सहायता।",
+
+        copyright:
+        "© 2026 ग्राम सेवा | ग्रामीण स्वच्छता जागरूकता परियोजना"
+    }
+
+};
+
+
+function changeLanguage(language) {
+
+    const t = translations[language];
+
+    if (!t) return;
+
+    document.documentElement.lang = language;
+
+    Object.keys(t).forEach(function(key) {
+
+        const element = document.getElementById(key);
+
+        if (element) {
+
+            if (key === "heroTitle") {
+                element.innerHTML = t[key];
+            }
+            else {
+                element.textContent = t[key];
+            }
+
+        }
+
+    });
+
+}
+
+
+document.getElementById("language").addEventListener("change", function() {
+
+    changeLanguage(this.value);
+
+});
+
+
+changeLanguage("en");
+
+</script>
+
+</body>
+<script>
+function searchSchemes() {
+
+    let search =
+        document.getElementById("schemeSearch").value.toLowerCase();
+
+    let cards =
+        document.querySelectorAll(".scheme-card");
+
+    cards.forEach(function(card) {
+
+        let text = card.innerText.toLowerCase();
+
+        if (text.includes(search)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
+</script>
+
+</body>
+</html>
+</html>
